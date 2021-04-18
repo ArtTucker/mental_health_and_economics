@@ -66,3 +66,64 @@ CREATE TABLE "Mental_health_workforce_avaibility" (
 SELECT * FROM "Mental_health_workforce_avaibility";
 
 -- Create income table:
+CREATE TABLE "Income" (
+    "lst" VARCHAR   NOT NULL,
+    "geographic_area_name" VARCHAR   NOT NULL,
+    "county" VARCHAR   NOT NULL,
+    "state" VARCHAR   NOT NULL,
+    "estimate_households_total" INTEGER   NOT NULL,
+    "poor(<10K)" FLOAT   NOT NULL,
+    "lower_poor(10K-15K)" FLOAT   NOT NULL,
+    "middle_poor(15K-25K)" FLOAT   NOT NULL,
+    "upper_poor(25K-35K)" FLOAT   NOT NULL,
+    "working(35K-50K)" FLOAT   NOT NULL,
+    "lower_middle(50K-75K)" FLOAT   NOT NULL,
+    "middle(75K-100K)" FLOAT   NOT NULL,
+    "upper_middle(100K-150K)" FLOAT   NOT NULL,
+    "upper_elite(>200K)" FLOAT   NOT NULL,
+    "median_income" INTEGER   NOT NULL
+);
+
+-- Create mental_vs_poverty table
+CREATE TABLE "Mental_vs_poverty" (
+    "state" VARCHAR   NOT NULL,
+    "year" INTEGER   NOT NULL,
+    "suicide_mean" FLOAT   NOT NULL,
+    "poverty_percentage" FLOAT   NOT NULL,
+    "mental_health_mean" FLOAT   NOT NULL,
+    "SZ_score" FLOAT   NOT NULL,
+    "PZ_score" FLOAT   NOT NULL,
+    "MZ_score" FLOAT   NOT NULL
+);
+
+-- Check:
+SELECT * FROM "Mental_vs_poverty";
+
+-- Create Income_per_households table (from Danielle):
+CREATE TABLE "Income_per_households" (
+    "LST" VARCHAR   NOT NULL,
+    "Geographic_Area_Name" VARCHAR   NOT NULL,
+    "County" VARCHAR   NOT NULL,
+    "id" INTEGER   NOT NULL,
+    "Estimate_Households_Total" INTEGER   NOT NULL,
+    "Estimate_Households_Total_Less_than_10,000" FLOAT   NOT NULL,
+    "Estimate_Households_Total_$10,000_to_$14,999" FLOAT   NOT NULL,
+    "Estimate_Households_Total_$15,000_to_$24,999" FLOAT   NOT NULL,
+    "Estimate_Households_Total_$25,000_to_$34,999" FLOAT   NOT NULL,
+    "Estimate_Households_Total_$35,000_to_$49,999" FLOAT   NOT NULL,
+    "Estimate_Households_Total_$50,000_to_74,999" FLOAT   NOT NULL,
+    "Estimate_Households_Total_$75,000_to_$99,999" FLOAT   NOT NULL,
+    "Estimate_Households_Total_$100,000_to_$149,999" FLOAT   NOT NULL,
+    "Estimate_Households_Total_$150,000_to_$199,999" FLOAT   NOT NULL,
+    "Estimate_Households_Total_$200,000_or_more" FLOAT   NOT NULL,
+    "EstimateHouseholds!!Median_income_(dollars)" INTEGER   NOT NULL,
+    "Estimate_Families_Total" INTEGER   NOT NULL,
+    "Estimate_Families_Total_Less_than_$10,000" FLOAT   NOT NULL,
+    "Estimate_Families_Total_$10,000_to_$14,999" FLOAT   NOT NULL,
+    "Estimate_Families_Total_$15,000_to_$24,999" FLOAT   NOT NULL,
+    "Estimate_Families_Total_$25,000_to_$34,999" FLOAT   NOT NULL,
+    "Estimate_Families_Total_$200,000_or_more" FLOAT   NOT NULL,
+    "EstimateFamilies!!Median_income_(dollars)" INTEGER   NOT NULL,
+    "Estimate_Families_Mean_income_$" INTEGER   NOT NULL,
+    "EstimateFamiliesPERCENT_ALLOCATEDFamily_income_in_the_past_12_months" FLOAT   NOT NULL
+);
