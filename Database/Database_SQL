@@ -1,0 +1,19 @@
+-- Create database:
+CREATE DATABASE Mental_Health_vs_Economics;
+
+-- Create tables:
+
+-- Suicide_rate:
+CREATE TABLE "Suicide_per_100K_individuals" (
+    "Location" VARCHAR   NOT NULL,
+    "Suicide_2019" FLOAT   NOT NULL,
+    "Suicide_2018" FLOAT   NOT NULL,
+    "Suicide_2017" FLOAT   NOT NULL,
+    "Suicide_2016" FLOAT   NOT NULL,
+    "Suicide_2015" FLOAT   NOT NULL,
+    "Suicide_2014" FLOAT   NOT NULL,
+    "Suicide_2013" FLOAT   NOT NULL,
+    "Suicide_2012" FLOAT   NOT NULL,
+    "Suicide_2011" FLOAT   NOT NULL,
+    "Suicide_2010" FLOAT   NOT NULL
+);
