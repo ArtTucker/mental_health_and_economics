@@ -1,9 +1,7 @@
 -- Create database:
 CREATE DATABASE Mental_Health_vs_Economics;
 
--- Create tables:
-
--- Suicide_rate:
+-- Suicide_rate table:
 CREATE TABLE "Suicide_per_100K_individuals" (
     "Location" VARCHAR   NOT NULL,
     "Suicide_2019" FLOAT   NOT NULL,
@@ -17,3 +15,54 @@ CREATE TABLE "Suicide_per_100K_individuals" (
     "Suicide_2011" FLOAT   NOT NULL,
     "Suicide_2010" FLOAT   NOT NULL
 );
+
+SELECT * FROM "Suicide_per_100K_individuals";
+
+-- Machine Learning table:
+CREATE TABLE "Machine_learning" (
+    "Currently_employed_" INTEGER   NOT NULL,
+    "Mental_Ilness" INTEGER   NOT NULL,
+    "Education" VARCHAR   NOT NULL,
+    "Computer_vs_smartphone" INTEGER   NOT NULL,
+    "Hospitalized_mental_illness" INTEGER   NOT NULL,
+    "Days_hospitalization" INTEGER   NOT NULL,
+    "Legally_disabled" INTEGER   NOT NULL,
+    "Access_to_internet" INTEGER   NOT NULL,
+    "Live_with_parents" INTEGER   NOT NULL,
+    "Gap_in_resume" INTEGER   NOT NULL,
+    "Length_gaps_months" INTEGER   NOT NULL,
+    "Annual_income" INTEGER   NOT NULL,
+    "Unemployed" INTEGER   NOT NULL,
+    "Read" INTEGER   NOT NULL,
+    "Annual_income_from_welfare_programs" INTEGER   NOT NULL,
+    "Food_stamps" INTEGER   NOT NULL,
+    "Section_8_housing" INTEGER   NOT NULL,
+    "Number_Hospitalization" INTEGER   NOT NULL,
+    "Lack_concentration" INTEGER   NOT NULL,
+    "Anxiety" INTEGER   NOT NULL,
+    "Depression" INTEGER   NOT NULL,
+    "Obsessive_thinking" INTEGER   NOT NULL,
+    "Mood_swing" INTEGER   NOT NULL,
+    "Panic_attack" INTEGER   NOT NULL,
+    "Compulsive_behavior" INTEGER   NOT NULL,
+    "Tiredness" INTEGER   NOT NULL,
+    "Age" INTEGER   NOT NULL,
+    "Gender" VARCHAR   NOT NULL,
+    "Household_income" TEXT   NOT NULL,
+    "Region" VARCHAR   NOT NULL,
+    "Device_type" VARCHAR   NOT NULL
+);
+
+Drop TABLE "Machine_learning";
+
+-- Create table Mental_health_workforce_avaibility:
+CREATE TABLE "Mental_health_workforce_avaibility" (
+    "Rank" INTEGER   NOT NULL,
+    "State" VARCHAR   NOT NULL,
+    "Rate" VARCHAR   NOT NULL
+);
+
+-- Check:
+SELECT * FROM "Mental_health_workforce_avaibility";
+
+-- Create income table:
