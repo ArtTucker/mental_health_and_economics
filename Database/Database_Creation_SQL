@@ -106,3 +106,15 @@ CREATE TABLE "Machine_learning" (
 
 -- Check:
 SELECT * FROM "Machine_learning";
+
+ALTER TABLE "Income_per_households" ADD CONSTRAINT "fk_Income_per_households_State" FOREIGN KEY("State")
+REFERENCES "Suicide_per_100K_individuals" ("Location");
+
+ALTER TABLE "Mental_vs_poverty" ADD CONSTRAINT "fk_Mental_vs_poverty_state" FOREIGN KEY("state")
+REFERENCES "Income_per_households" ("State");
+
+ALTER TABLE "Mental_health_workforce_avaibility" ADD CONSTRAINT "fk_Mental_health_workforce_avaibility_State" FOREIGN KEY("State")
+REFERENCES "Income_per_households" ("State");
+
+ALTER TABLE "Suicide_per_100K_individuals" ADD CONSTRAINT "fk_Suicide_per_100K_individuals_Location" FOREIGN KEY("Location")
+REFERENCES "Mental_vs_poverty" ("state");
