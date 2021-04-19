@@ -37,6 +37,3 @@ Our current machine learning model can be found [here](https://github.com/ArtTuc
 
 ## Database:
 We have two current database models in progress. Our current database work can be found [here](https://github.com/ArtTucker/mental_health_and_economics/tree/SylvainDessagnes/Database). One schema model can be found [here](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes/Database/Database_ERD.png?raw=true). The other schema can be found [here](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes/Database/Funding_ERD.png?raw=true).
-
-
-
