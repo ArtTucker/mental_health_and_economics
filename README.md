@@ -1,5 +1,8 @@
 # mental_health_and_economics
- an analytical exploration of the connection between mental health and economics
 
-Main Branch:
-* Description of the communication protocols
+## Segment 1 - Triangle Role
+
+### I chose to use the Random Forest Model because it is a robust model that can handle large data sets.  It is also able to rank the importance of the input variable which will be helpful as we progress in the project.
+
+
+
