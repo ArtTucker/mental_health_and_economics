@@ -12,6 +12,11 @@ Mental health problems are not moral failings. They are common occurrences, and 
 
 ### Data Source:
 
+Machine Learning dataset from kaggle [visit.](https://www.kaggle.com/michaelacorley/unemployment-and-mental-illness-survey)
+<br>
+Income per individual by state [visit.](https://data.census.gov/)
+
+
 ### Problematic:
 
 Couple problematics can be raised but this project mainly focus on :
@@ -31,6 +36,10 @@ Couple problematics can be raised but this project mainly focus on :
 
 
 ### Machine Learning Model:
+
+Knowing that we want to predict an accurate output, we will use a supervised learning model, as it is we are still looking for the good questions to answers and dataset to answer it. The target will be to predict is someone will be touch by mental illness based on multiple features.<br>
+We are using so far a random forest classifier because one of it's biggest advantage is versatility. It can be used for both regression and classification tasks, and it's also easy to view the relative importance it assigns to the input features.
+Going forward we are thinking about using a model to target why somebody could have suicidal thought or action based on gathered features about mental health and economics.
 
 
 ### Database:
