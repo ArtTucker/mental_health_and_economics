@@ -3,7 +3,7 @@
 ## Team members -- roles -- branch links:
 * Art Tucker -- github repository management -- [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/tucker_a_branch_01)
 * Preeti Suryakumar -- technology director -- [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/preeti-01)
-* Radhika Vinodh Tippana -- database administration -- [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/rtippana)
+* Radhika Tippana -- database administration -- [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/rtippana)
 * Victoria Morales -- machine learning engineer -- [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/morales_v_branch)
 * Sylvain Dessagnes -- database administration -- [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/SylvainDessagnes)
 * Danielle Stauffer -- machine learning engineer/database administration -- [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/Stauffer_Branch)
