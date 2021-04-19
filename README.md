@@ -5,16 +5,16 @@ Main Branch:
 * Description of the communication protocols
 
 ## Technology anticipated to be used
-Briefly we anticipate to use the following 
+Broadly speaking, in preparation for our final projects this week we have identified certain data sets.  
 
 Primary dataset sources:
-Data - Census.gov
-Adults Reporting Mental Illness in the Past Year
+Data - Census.gov /
+Adults Reporting Mental Illness in the Past Year /n
 National Mental Health Services Survey 2019 (N-MHSS-2019-DS0001)
 https://console.cloud.google.com/marketplace/product/hhs/health-professional-shortage-areas?project=ucbeconmentalhealth&folder=&organizationId=
 https://data.cdc.gov/NCHS/Indicators-of-Anxiety-or-Depression-Based-on-Repor/8pt5-q6wp
 
-Pandas and Excel are used to preprocess and complete out ETL process.
+We Pandas and Excel are used to preprocess and complete out ETL process.
 
 ERD with SQL
 
