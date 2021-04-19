@@ -1,7 +1,8 @@
 -- Create database:
 CREATE DATABASE Mental_Health_vs_Economics;
 
--- Suicide_rate table:
+-- Database Mental_Health_vs_Economics:
+
 CREATE TABLE "Suicide_per_100K_individuals" (
     "Location" VARCHAR   NOT NULL,
     "Suicide_2019" FLOAT   NOT NULL,
@@ -16,9 +17,6 @@ CREATE TABLE "Suicide_per_100K_individuals" (
     "Suicide_2010" FLOAT   NOT NULL
 );
 
-SELECT * FROM "Suicide_per_100K_individuals";
-
--- Machine Learning table:
 CREATE TABLE "Machine_learning" (
     "Currently_employed_" INTEGER   NOT NULL,
     "Mental_Ilness" INTEGER   NOT NULL,
@@ -48,24 +46,17 @@ CREATE TABLE "Machine_learning" (
     "Tiredness" INTEGER   NOT NULL,
     "Age" INTEGER   NOT NULL,
     "Gender" VARCHAR   NOT NULL,
-    "Household_income" TEXT   NOT NULL,
+    "Household_income" VARCHAR   NOT NULL,
     "Region" VARCHAR   NOT NULL,
     "Device_type" VARCHAR   NOT NULL
 );
 
-Drop TABLE "Machine_learning";
-
--- Create table Mental_health_workforce_avaibility:
 CREATE TABLE "Mental_health_workforce_avaibility" (
     "Rank" INTEGER   NOT NULL,
     "State" VARCHAR   NOT NULL,
     "Rate" VARCHAR   NOT NULL
 );
 
--- Check:
-SELECT * FROM "Mental_health_workforce_avaibility";
-
--- Create income table:
 CREATE TABLE "Income" (
     "lst" VARCHAR   NOT NULL,
     "geographic_area_name" VARCHAR   NOT NULL,
@@ -84,7 +75,6 @@ CREATE TABLE "Income" (
     "median_income" INTEGER   NOT NULL
 );
 
--- Create mental_vs_poverty table
 CREATE TABLE "Mental_vs_poverty" (
     "state" VARCHAR   NOT NULL,
     "year" INTEGER   NOT NULL,
@@ -92,14 +82,10 @@ CREATE TABLE "Mental_vs_poverty" (
     "poverty_percentage" FLOAT   NOT NULL,
     "mental_health_mean" FLOAT   NOT NULL,
     "SZ_score" FLOAT   NOT NULL,
-    "PZ_score" FLOAT   NOT NULL,
+    "PZ_socre" FLOAT   NOT NULL,
     "MZ_score" FLOAT   NOT NULL
 );
 
--- Check:
-SELECT * FROM "Mental_vs_poverty";
-
--- Create Income_per_households table (from Danielle):
 CREATE TABLE "Income_per_households" (
     "LST" VARCHAR   NOT NULL,
     "Geographic_Area_Name" VARCHAR   NOT NULL,
@@ -127,3 +113,16 @@ CREATE TABLE "Income_per_households" (
     "Estimate_Families_Mean_income_$" INTEGER   NOT NULL,
     "EstimateFamiliesPERCENT_ALLOCATEDFamily_income_in_the_past_12_months" FLOAT   NOT NULL
 );
+
+ALTER TABLE "Suicide_per_100K_individuals" ADD CONSTRAINT "fk_Suicide_per_100K_individuals_Location" FOREIGN KEY("Location")
+REFERENCES "Income" ("state");
+
+ALTER TABLE "Income" ADD CONSTRAINT "fk_Income_county" FOREIGN KEY("county")
+REFERENCES "Income_per_households" ("County");
+
+ALTER TABLE "Income" ADD CONSTRAINT "fk_Income_state" FOREIGN KEY("state")
+REFERENCES "Mental_health_workforce_avaibility" ("State");
+
+ALTER TABLE "Mental_vs_poverty" ADD CONSTRAINT "fk_Mental_vs_poverty_state" FOREIGN KEY("state")
+REFERENCES "Income" ("state");
+
