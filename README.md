@@ -9,14 +9,11 @@ Broadly speaking, in preparation for our final projects this week we have identi
 
 Primary dataset sources:
 Data - Census.gov <br/>
-Adults Reporting Mental Illness in the Past Year 
-National Mental Health Services Survey 2019 (N-MHSS-2019-DS0001)
-https://console.cloud.google.com/marketplace/product/hhs/health-professional-shortage-areas?project=ucbeconmentalhealth&folder=&organizationId=
-https://data.cdc.gov/NCHS/Indicators-of-Anxiety-or-Depression-Based-on-Repor/8pt5-q6wp
+Adults Reporting Mental Illness in the Past Year ---National Mental Health Services Survey 2019 (N-MHSS-2019-DS0001) <br/>
+https://console.cloud.google.com/marketplace/product/hhs/health-professional-shortage-areas?project=ucbeconmentalhealth&folder=&organizationId= <br/>
+https://data.cdc.gov/NCHS/Indicators-of-Anxiety-or-Depression-Based-on-Repor/8pt5-q6wp <br/>
 
-We Pandas and Excel are used to preprocess and complete out ETL process.
-
-ERD with SQL
+We used Pandas to initiate the ETL process. Cleaning data, merging multiple datasets and extracting pertinent information is ongoing. We were able to create an ERD using pgAdmin and use the same as our database. 
 
 Our Hypothesis is centered around these questions
 1) The rate of Depression/anxiety is higher in lower socio economic class.
