@@ -25,14 +25,17 @@ Our team has had a lot of struggles with finding appropriate, adequate datasets 
 * we're also still searching for more datasets that might provide more opportunities for machine learning analysis and might help better direct our project.
 
 ## Questions:
-Currently we have one primary question and some secondary or tertiary questions:
-1. Are rates of depression/anxiety higher in states(?) with lower per-capita income levels?
-2. Are mental health services more or less available in low-income zip-codes/counties?
-3. Has availability of mental health treatment services significantly increase/decrease over time?
+In broad terms our project is centered around these two hypotheses:
+1. The rate of Depression/anxiety is higher in lower socioeconomic class.
+2. There is less mental health resource in lower income states/counties.
+
+Our secondary or tertiary questions are as follows:
+3. Has availability of mental health treatment services significantly improved or decreased in recent years?
 4. How has COVID-19 affected rates of reported depression and/or anxiety?
 Unfortunately we have recently realized that these questions are really limited to linear analysis and don't necessarily lend themselves to extensive machine learning models. We are working on finding better questions and better datasets.
 
 ## Machine learning model:
+At this time - our ML model will be Supervised learning. We hope to see certain trends to predicts suicide or trends to diagnose depression. We anticipate using prediction models to identify triggers. Depending on our output and what information we use from the data our final presentation may include geolocation data (using javascript) or Tableau. We would also like to explore the data more and see if Tableau can be used to depict other factors such as gender, race, or job titles affecting Mental Health.
 Our current machine learning model can be found [here](https://github.com/ArtTucker/mental_health_and_economics/blob/morales_v_branch/unemployement_random_forest.ipynb). It is built using the Kaggle-sourced "Unemployment and mental illness survey" data noted above.
 
 ## Database:
