@@ -33,10 +33,12 @@ Our secondary or tertiary questions are as follows:
 
 3. Has availability of mental health treatment services significantly improved or decreased in recent years?
 4. How has COVID-19 affected rates of reported depression and/or anxiety?
+
 Unfortunately we have recently realized that these questions are really limited to linear analysis and don't necessarily lend themselves to extensive machine learning models. We are working on finding better questions and better datasets.
 
 ## Machine learning model:
 At this time - our ML model will be Supervised learning. We hope to see certain trends to predicts suicide or trends to diagnose depression. We anticipate using prediction models to identify triggers. Depending on our output and what information we use from the data our final presentation may include geolocation data (using javascript) or Tableau. We would also like to explore the data more and see if Tableau can be used to depict other factors such as gender, race, or job titles affecting Mental Health.
+
 Our current machine learning model can be found [here](https://github.com/ArtTucker/mental_health_and_economics/blob/morales_v_branch/unemployement_random_forest.ipynb). It is built using the Kaggle-sourced "Unemployment and mental illness survey" data noted above.
 
 ## Database:
