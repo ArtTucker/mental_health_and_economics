@@ -30,6 +30,7 @@ In broad terms our project is centered around these two hypotheses:
 2. There is less mental health resource in lower income states/counties.
 
 Our secondary or tertiary questions are as follows:
+
 3. Has availability of mental health treatment services significantly improved or decreased in recent years?
 4. How has COVID-19 affected rates of reported depression and/or anxiety?
 Unfortunately we have recently realized that these questions are really limited to linear analysis and don't necessarily lend themselves to extensive machine learning models. We are working on finding better questions and better datasets.
