@@ -2,12 +2,12 @@
 
 ## Team Members : Roles : Branch Links
 
-- Art Tucker : Git-Hub Repository Administrator [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/tucker_a_branch_01).
-- Preeti Suryakumar : Technology Director [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/preeti-01).
-- Radhika Tippana : Database Administration [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/rtippana).
-- Sylvain Dessagnes : Database Administration [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/SylvainDessagnes).
-- Victoria Morales : Machine Learning Engineer [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/morales_v_branch).
-- Danielle Stauffer : Machine Learning Engineers [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/Stauffer_Branch).
+- Art Tucker : Git-Hub Repository Administrator : [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/tucker_a_branch_01).
+- Preeti Suryakumar : Technology Director : [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/preeti-01).
+- Radhika Tippana : Database Administration : [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/rtippana).
+- Sylvain Dessagnes : Database Administration : [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/SylvainDessagnes).
+- Victoria Morales : Machine Learning Engineer : [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/morales_v_branch).
+- Danielle Stauffer : Machine Learning Engineers : [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/Stauffer_Branch).
 
 ## Overview of Project Topic:
 An analytical exploration of the connection between mental health and economic status in The US.
@@ -64,5 +64,5 @@ We are using a postgreSQL database. Knowing that we are not going to work with a
 - Ability to be access by more than one person.
 
 Our current database work can be found [here](https://github.com/ArtTucker/mental_health_and_economics/tree/SylvainDessagnes/Database).
-Entity Relational Diagram [visit](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes/Database/Database_ERD.png).
-SQL code for database creation [visit](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes/Database/Database_Creation_SQL).
+* Entity Relational Diagram [visit](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes/Database/Database_ERD.png).
+* SQL code for database creation [visit](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes/Database/Database_Creation_SQL).
