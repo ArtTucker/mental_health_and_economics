@@ -8,8 +8,8 @@ Main Branch:
 Broadly speaking, in preparation for our final projects this week we have identified certain data sets.  
 
 Primary dataset sources:
-Data - Census.gov /
-Adults Reporting Mental Illness in the Past Year /n
+Data - Census.gov <br/>
+Adults Reporting Mental Illness in the Past Year 
 National Mental Health Services Survey 2019 (N-MHSS-2019-DS0001)
 https://console.cloud.google.com/marketplace/product/hhs/health-professional-shortage-areas?project=ucbeconmentalhealth&folder=&organizationId=
 https://data.cdc.gov/NCHS/Indicators-of-Anxiety-or-Depression-Based-on-Repor/8pt5-q6wp
