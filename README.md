@@ -66,3 +66,4 @@ We are using a postgreSQL database. Knowing that we are not going to work with a
 Our current database work can be found [here](https://github.com/ArtTucker/mental_health_and_economics/tree/SylvainDessagnes/Database).
 * Entity Relational Diagram [visit](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes/Database/Database_ERD.png).
 * SQL code for database creation [visit](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes/Database/Database_Creation_SQL).
+
