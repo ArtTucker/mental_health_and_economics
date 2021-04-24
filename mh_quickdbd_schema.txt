@@ -1,0 +1,45 @@
+Company_Policies
+-
+new_id int pk fk - Employee_Info.new_id 
+mh_coverage varchar
+mh_coverage_awareness varchar
+mh_employer_discussion varchar
+mh_resources_provided varchar
+mh_anonimity varchar
+mh_medical_leave varchar
+mh_discussion_negative_impact varchar
+ph_discussion_negative_impact varchar
+
+Employee_Perception
+-
+new_id int pk fk - Employee_Info.new_id
+mh_discussion_coworkers varchar
+mh_discussion_supervisors varchar
+mh_equal_ph varchar
+mh_observed_consequences_coworkers bool
+future_ph_specification varchar
+future_mh_specification varchar
+mh_hurt_on_career varchar
+mh_neg_view_coworkers varchar
+mh_sharing_friends_family varchar
+mh_bad_response_workplace varchar
+
+Employee_Info
+-
+new_id int pk fk
+age int
+gender varchar
+country_live varchar
+live_us_state varchar
+country_work varchar
+work_us_state varchar
+work_position varchar
+remote varchar
+mh_family_history varchar
+mh_dx_past varchar
+mh_dx_current varchar
+mh_dx_pro bool
+mh_sought_pro_tx bool
+mh_eff_tx_impact_on_work varchar
+mh_not_eff_tx_impact_on_work varchar
+
