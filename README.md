@@ -10,4 +10,4 @@ Our goal is to understand: What factors contribute to a workplace that feel comf
 5. Examine 'age' column and remove data, when age falls under 20 or over 100
 6. Bin 'age' and create two columns that show age as 4 bins (aka quartiles) and 10 bins (aka deciles)
 7. Create a 'new_id' column with unique identifiers
-8. Remove columns with over 1000 nan: 'mh_online_resources','mh_dx_revealed_clients','mh_coworkers_reveal_negative_impact','mh_product_impact','mh_product_impact_perceived'
+8. Remove columns with over 1000 nan: 'mh_online_resources', 'mh_dx_revealed_clients', 'mh_coworkers_reveal_negative_impact', 'mh_product_impact', 'mh_product_impact_perceived'
