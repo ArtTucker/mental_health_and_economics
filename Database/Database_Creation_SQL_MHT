@@ -102,7 +102,7 @@ CREATE TABLE public."2016_surveydata"
     quantile_age_2 text COLLATE pg_catalog."default"
 )
 
-//Add Foreign Key//
+///Add Foreign Key///
 ALTER TABLE "2014_surveydata" ADD CONSTRAINT "fk_2014_surveydata" FOREIGN KEY("SurveyID")
 REFERENCES "Survey" ("SurveyID");
 
