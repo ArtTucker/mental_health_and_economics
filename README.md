@@ -1,50 +1,31 @@
 # Overview of Project:
 
-An analytical exploration of the connection between mental health and economics status in The US.
-As today, mental illness affect millions of adults in the United States.
-- Approximately 1 in 5 adults in the U.S. experiences mental illness in a given year.
-- Approximately 1 in 25 adults in the U.S. experiences a serious mental health issue that substantially interferes with one or more major life activities.
+An analytical exploration more focus toward tech-industry of the connection between mental health and economics status in The US. As today, mental illness affect millions of adults in the United States.
+ 
 
-Mental health problems are not moral failings. They are common occurrences, and many people need help to get better. Many factors contribute to mental health problems, including:
-- Biological factors, such as genes, physical illness, injury, or brain chemistry.
-- Life experiences, such as trauma or a history of abuse.
-- Family history of mental health problems.
+### Reason:
+Many of us have battled with depression and anxiety issues for most of our lives. We are intimately aware of how these issues can be exacerbated by as well as lead to financial hardships. We wanted to further explore the statistics and numbers underpinning this relationship.
 
 ### Data Source:
+We source our data from kaggle more specifically datasets including surveys focusing on individual working in tech-company from 2014 to 2021.<br>
+[Visit](https://github.com/ArtTucker/mental_health_and_economics/tree/SylvainDessagnes_2nd_segment/resources) our resources.
 
-Machine Learning dataset from kaggle [visit.](https://www.kaggle.com/michaelacorley/unemployment-and-mental-illness-survey)
-<br>
-Income per individual by state [visit.](https://data.census.gov/)
+### Team Members : 
+- Art Tucker : [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/tucker_a_branch_01) 
+- Preeti Suryakumar : [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/preeti-01)
+- Radhika Tippana : [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/rtippana_segment_2)
+- Sylvain Dessagnes : [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/SylvainDessagnes_2nd_segment)
+- Victoria Morales : [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/morales_v_branch)
+- Danielle Stauffer : [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/Stauffer_Branch)
 
-
-### Problematic:
-
-Couple problematics can be raised but this project mainly focus on :
-
-- Is there a relation between mental illness and individual economic status?
-- Is there a correlation between mental health resources, infrastructures and mental illness rate by state?
-- How mental health resources and treatment evolved during the last years?
-
-### Git Hub:
-
-- Art Tucker : Git-Hub repository administrator [branch.](https://github.com/ArtTucker/mental_health_and_economics/tree/tucker_a_branch_01)
-- Preeti Suryakumar : Technology coordinator [branch.](https://github.com/ArtTucker/mental_health_and_economics/tree/preeti-01)
-- Radhika Vinodh Tippana : Database Administration [branch.](https://github.com/ArtTucker/mental_health_and_economics/tree/rtippana)
-- Sylvain Dessagnes : Database Administration [branch.](https://github.com/ArtTucker/mental_health_and_economics/tree/SylvainDessagnes)
-- Victoria Morales : Machine Learning engineer [branch.](https://github.com/ArtTucker/mental_health_and_economics/tree/morales_v_branch)
-- Danielle Stauffer : Machine Learning engineers [branch.](https://github.com/ArtTucker/mental_health_and_economics/tree/Stauffer_Branch)
-
-
-### Machine Learning Model:
-
-Knowing that we want to predict an accurate output, we will use a supervised learning model, as it is we are still looking for the good questions to answers and dataset to answer it. The target will be to predict is someone will be touch by mental illness based on multiple features.<br>
-We are using so far a random forest classifier because one of it's biggest advantage is versatility. It can be used for both regression and classification tasks, and it's also easy to view the relative importance it assigns to the input features.
-Going forward we are thinking about using a model to target why somebody could have suicidal thought or action based on gathered features about mental health and economics.
-
+### Machine learning model:
+- Datasource: [visit](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/resources/clean_data/clean_dataset_2016.csv)
 
 ### Database:
 
-We use in our case an SQL database, more specifically Postgres. Knowing that we are not going to work with a huge volumes of data, there are more advantages for us to use a relational database management system.
+For our project we use an SQL database, more specifically Postgres and pgadmin to interact with it. In our case, knowing that we are not going to work with a huge volumes of data, there are more advantages for us to use a relational database management system.
+
+For example:
 - Data structure.
 - Easy access to the network.
 - Language (MySQL).
@@ -52,6 +33,18 @@ We use in our case an SQL database, more specifically Postgres. Knowing that we 
 - Maintenance.
 - Ability to be access by more than one person.
 
-Entity Relational Diagram [visit.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes/Database/Database_ERD.png)
+Using python package sqlalchemy, and the needed modules (create_engine/session) we build a database with our selected data and are able to preprocess it using python/pandas and then upload it into our database **Final_project_mental_health**, as well as imported it from the database into any python script we are working on.
+We also can directly query the database in our pandas jupyter notebook using SQL code.
 <br>
-SQL code for database creation [visit.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes/Database/Database_Creation_SQL)
+[Checkout](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/database/database_connection.ipynb) our *database_connection* script.
+Running this script will update any changes applied to our datasets on the database tables.
+Each team member have the database on his local server with up-to-date data inside.
+<br>
+Entity Relational Diagram [visit.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/database/database_ERD.png)
+<br>
+SQL code for database creation [visit.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/database/database_creation_SQL)
+<br>
+Ongoing database work [here.](https://github.com/ArtTucker/mental_health_and_economics/tree/SylvainDessagnes_2nd_segment/database)
+### Dashboard:
+
+Click [here]() to review our ongoing story.
