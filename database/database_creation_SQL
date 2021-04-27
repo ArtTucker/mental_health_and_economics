@@ -100,3 +100,64 @@ CREATE TABLE "dataset_2016" (
     "remote" string,
     "year" int FK >- dataset_2014.year
 );
+
+-- Create dataset_2017 table:
+CREATE TABLE "dataset_2017" (
+    "self_employed" text,
+    "company_size" text,
+    "tech_or_not" text,
+    "related_tech_it" text,
+    "employer_provide_mh_coverage" text,
+    "options_mh_coverage" text,
+    "employer_discus_mh" text,
+    "employers_options_help" text,
+    "protected_anonymity_mh" text,
+    "leave" text,
+    "discuss_mh_ph" text,
+    "mh_supervisor" text,
+    "mh_employer" text,
+    "mh_coworkers" text,
+    "employer_importance_ph" text,
+    "employer_importance_mh" text,
+    "private_mh_insurance" text,
+    "reveal_mh_clients" text,
+    "reveal_affect_relationship" text,
+    "reveal_mh_coworkers" text,
+    "reveal_impact_relationship" text,
+    "prev_employer" text,
+    "prev_tech_or_not" text,
+    "prev_provided_mh_coverage" text,
+    "prev_wellness_program" text,
+    "prev_anonymity_preserved_mh" text,
+    "prev_discuss_supervisors" text,
+    "prev_discuss_employer" text,
+    "prev_discuss_coworkers" text,
+    "prev_importance_ph" text,
+    "prev_importance_mh" text,
+    "currently_mh_disorder" text,
+    "dx_mh_disorder" text ,
+    "treatment_mh_from_professional" text,
+    "mh_family_history" text,
+    "ph_interview" text,
+    "why_why_not" text,
+    "mh_interview" text,
+    "why_whynot" text,
+    "identified_with_mh" text,
+    "unsuportive_reponse_to_mh" text,
+    "suportive_response_to_mh" text,
+    "tech_industry_support_mh" text,
+    "age" int,
+    "gender" text,
+    "country_live" text,
+    "state_live" text,
+    "ethnicity" text,
+    "country_work" text,
+    "state_work" text,
+    "year" int
+);
+
+ALTER TABLE "dataset_2014" ADD CONSTRAINT "fk_dataset_2014_year" FOREIGN KEY("year")
+REFERENCES "dataset_2016" ("year");
+
+ALTER TABLE "dataset_2016" ADD CONSTRAINT "fk_dataset_2016_year" FOREIGN KEY("year")
+REFERENCES "dataset_2017" ("year");
