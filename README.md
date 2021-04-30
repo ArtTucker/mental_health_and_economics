@@ -1,6 +1,6 @@
 # Mental Health and Economics
 
-## Team Members : Roles : Branch Links
+## Team Members : Branch Links
 
 - Art Tucker : [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/tucker_a_branch_01).
 - Preeti Suryakumar : [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/preeti-01).
