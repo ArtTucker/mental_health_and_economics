@@ -29,8 +29,7 @@ To start off we pre-process our data, make sure the values in the columns are co
 Then we encode the dataset using a label encoder.
 As now, we try to predict two different target:
 1) Can we predict if an individual is more susceptible to get a leave from work if there is suspicion or confirmation of mental health issue.
-
-[Code.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/machine_learning/machine_learning_test1.ipynb)
+[Script.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/machine_learning/machine_learning_test1.ipynb)
 
 *Target*: If a mental health issue prompted you to request a medical leave from work, asking for that leave would be?
 We reduce the data values in the leave columns to 3.(easy/difficult/neither easy nor difficult)
@@ -41,13 +40,11 @@ To train and test our dataset, we use demographics information features (age/gen
 
    
 2) Can we predict if an individual is diagnosed with mental illness.
+[Script.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/machine_learning/machine_learning_test2.ipynb)
 
-[Code.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/machine_learning/machine_learning_test2.ipynb)
-
-
-*Target*: Do you currently have a mental health disorder?
+**Target**: Do you currently have a mental health disorder?
 <br>
-*Features*: We use demographics information(age/gender/place of habitation), as well as facts on current and previous employer(mental health coverage plan, sensitisation towards mental illness in the company, anonymity preserved) and also insight on previous mental illness.    
+**Features**: We use demographics information(age/gender/place of habitation), as well as facts on current and previous employer(mental health coverage plan, sensitisation towards mental illness in the company, anonymity preserved) and also insight on previous mental illness.    
 <br>
 
 For both model, we decide to split our entry data into 75% for training set and 25% testing set, because any train-test split which has more data in the training set will most likely give you better accuracy as calculated on that test set. like that the training dataset for the model can learn an effective mapping of input to output. 
@@ -55,13 +52,14 @@ When splitting the dataset, we stratify it so that each split is similar. In a c
 <br>
 As now, we are using a Random Forest Classifier because of his versatility, it can be used for both classifications and regression task. It provides higher accuracy through cross validation. Compared to simple decisions trees, instead of searching for the most important feature while splitting a node, it searches for the best feature among a random subset of features.
 <br>
-*Benefits*:
+<br>
+**Benefits**:
 - Robust to outliers.
 - Works well with non-linear data.
 - Lower risk of over-fitting.
 - Better accuracy than other classification algorithms.
 
-*Limitations*:
+**Limitations**:
 - The main limitation of random forest is that many trees can make the algorithm too slow and ineffective for real-time predictions.
 
 
