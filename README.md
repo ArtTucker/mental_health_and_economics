@@ -29,21 +29,22 @@ To start off we pre-process our data, make sure the values in the columns are co
 Then we encode the dataset using a label encoder.
 As now, we try to predict two different target:
 1) Can we predict if an individual is more susceptible to get a leave from work if there is suspicion or confirmation of mental health issue.
-<br>
+
 [Code.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/machine_learning/machine_learning_test1.ipynb)
-<br>
+
 *Target*: If a mental health issue prompted you to request a medical leave from work, asking for that leave would be?
 We reduce the data values in the leave columns to 3.(easy/difficult/neither easy nor difficult)
 <br>
 Our decision-making process for this selection was to find information related to mental health who can help predict the need for a work leave due to mental illness.
 <br>   
 To train and test our dataset, we use demographics information features (age/gender/place of habitation and work), information on current and past employer(provide or not mental health insurance plan, anonymity respected in case of mental illness issue), and also some information about individual mental health status(diagnose with mental illness or treated by a professional, currently and in the past, family history)
-<br> 
-<br>   
+
+   
 2) Can we predict if an individual is diagnosed with mental illness.
-<br>
+
 [Code.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/machine_learning/machine_learning_test2.ipynb)
-<br>
+
+
 *Target*: Do you currently have a mental health disorder?
 <br>
 *Features*: We use demographics information(age/gender/place of habitation), as well as facts on current and previous employer(mental health coverage plan, sensitisation towards mental illness in the company, anonymity preserved) and also insight on previous mental illness.    
