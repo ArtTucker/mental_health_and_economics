@@ -13,7 +13,12 @@ Most people identified as male in the survey. 722 respondents (72% of the total 
 Most respondents felt comfortable talking about mental health with their supervisors. 95 women (37% of all female respondents) and 272 men (38% of all male respondents) affirmed that they would talk to their supervisor about mental health. This suggests people felt similarly about the matter at hand, regardless of gender. However, ‘yes’, ‘no’, and ‘maybe’ responses appeared almost evenly split into thirds. This demonstrates people overall took varied approaches.
 \
 \
-Despite some inclination to share about their mental health, almost half of all respondents believed that being identified as having a mental health diagnosis would hurt their career. 134 (52%) of women believed a mental health diagnosis either had or would hurt their career. Comparatively, 313 (43%) of men believed a mental health diagnosis either had or would hurt their career. Women feared retribution more than men in this scenario.
+Despite some inclination to share about their mental health, almost half of all respondents believed that being identified as having a mental health diagnosis would hurt their career. 134 (52%) of women believed a mental health diagnosis either had or would hurt their career. Comparatively, 313 (43%) of men believed a mental health diagnosis either had or would hurt their career. Women feared retribution more than men in this scenario. Figure A demonstrates below:
+\
+\
+**Figure A**
+\
+!["gender_and_mh_hurt_on_career"](https://github.com/ArtTucker/mental_health_and_economics/blob/main/images/gender_and_mh_hurt_on_career.png)
 \
 \
 Nevertheless, when asked if they had observed co workers receiving negative consequences for revealing a mental health condition, almost 90% of both men and women said ‘no.’ Even though people feared for their careers if they were identified with a mental health condition, they also lacked any observable evidence of others receiving different treatment because of a mental health condition.
