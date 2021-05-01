@@ -19,7 +19,52 @@ We source our data from kaggle more specifically datasets including surveys focu
 - Danielle Stauffer : [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/Stauffer_Branch)
 
 ### Machine learning model:
-- Datasource: [visit](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/resources/clean_data/clean_dataset_2016.csv)
+
+Our goal is to predict an output from a previous experience, to achieve this goal, we will use supervised machine learning model.<br>
+This kind of model allow us to use training data to learn a link between the input, and the output. Compared to unsupervised learning, it is a more accurate and trustworthy method.<br>
+- Datasource: [visit.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/resources/clean_data/clean_dataset_2016.csv)
+<br>
+  
+To start off we pre-process our data, make sure the values in the columns are consistent [visit.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/notebook/cleaning_dataset_2016.ipynb). Our interest here is to focus on individual who work in a tech-company.<br> 
+Then we encode the dataset using a label encoder.
+As now, we try to predict two different target:
+1) Can we predict if an individual is more susceptible to get a leave from work if there is suspicion or confirmation of mental health issue.
+<br>
+[Code.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/machine_learning/machine_learning_test1.ipynb)
+<br>
+*Target*: If a mental health issue prompted you to request a medical leave from work, asking for that leave would be?
+We reduce the data values in the leave columns to 3.(easy/difficult/neither easy nor difficult)
+<br>
+Our decision-making process for this selection was to find information related to mental health who can help predict the need for a work leave due to mental illness.
+<br>   
+To train and test our dataset, we use demographics information features (age/gender/place of habitation and work), information on current and past employer(provide or not mental health insurance plan, anonymity respected in case of mental illness issue), and also some information about individual mental health status(diagnose with mental illness or treated by a professional, currently and in the past, family history)
+<br> 
+<br>   
+2) Can we predict if an individual is diagnosed with mental illness.
+<br>
+[Code.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/machine_learning/machine_learning_test2.ipynb)
+<br>
+*Target*: Do you currently have a mental health disorder?
+<br>
+*Features*: We use demographics information(age/gender/place of habitation), as well as facts on current and previous employer(mental health coverage plan, sensitisation towards mental illness in the company, anonymity preserved) and also insight on previous mental illness.    
+<br>
+
+For both model, we decide to split our entry data into 75% for training set and 25% testing set, because any train-test split which has more data in the training set will most likely give you better accuracy as calculated on that test set. like that the training dataset for the model can learn an effective mapping of input to output. 
+When splitting the dataset, we stratify it so that each split is similar. In a classification setting, it is often chosen to ensure that the train and test sets have approximately the same percentage of samples of each target class as the complete set.
+<br>
+As now, we are using a Random Forest Classifier because of his versatility, it can be used for both classifications and regression task. It provides higher accuracy through cross validation. Compared to simple decisions trees, instead of searching for the most important feature while splitting a node, it searches for the best feature among a random subset of features.
+<br>
+*Benefits*:
+- Robust to outliers.
+- Works well with non-linear data.
+- Lower risk of over-fitting.
+- Better accuracy than other classification algorithms.
+
+*Limitations*:
+- The main limitation of random forest is that many trees can make the algorithm too slow and ineffective for real-time predictions.
+
+
+
 
 ### Database:
 
