@@ -31,7 +31,7 @@ As now, we try to predict two different target:
 1) Can we predict if an individual is more susceptible to get a leave from work if there is suspicion or confirmation of mental health issue.
 [Script.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/machine_learning/machine_learning_test1.ipynb)
 
-*Target*: If a mental health issue prompted you to request a medical leave from work, asking for that leave would be?
+**Target**: If a mental health issue prompted you to request a medical leave from work, asking for that leave would be?
 We reduce the data values in the leave columns to 3.(easy/difficult/neither easy nor difficult)
 <br>
 Our decision-making process for this selection was to find information related to mental health who can help predict the need for a work leave due to mental illness.
@@ -62,7 +62,10 @@ As now, we are using a Random Forest Classifier because of his versatility, it c
 **Limitations**:
 - The main limitation of random forest is that many trees can make the algorithm too slow and ineffective for real-time predictions.
 
-
+In addition, we pursue our machine learning exploratory by using an Oversampling and Undersampling algorithm.
+<br>
+Oversampling is capable of improving resolution and signal-to-noise ratio, and can be helpful in avoiding aliasing and phase distortion by relaxing anti-aliasing filter performance requirements but this method can result in overfitting for some models due to duplicates examples from the minority class in the training dataset.
+So far Oversampling look better because we keep all the information in the training dataset. With undersampling we drop a lot of information. Even if this dropped information belongs to the majority class, it is useful information for a modeling algorithm.
 
 
 ### Database:
