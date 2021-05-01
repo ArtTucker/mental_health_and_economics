@@ -1,0 +1,110 @@
+//Table to hold the survey year info//
+
+CREATE TABLE public."Survey"
+(
+    "SurveyID" bigint NOT NULL,
+    "Description" text COLLATE pg_catalog."default",
+    CONSTRAINT "Survey_pkey" PRIMARY KEY ("SurveyID")
+)
+
+//Table to hold the 2014 survey details//
+
+CREATE TABLE public."2014_surveydata"
+(
+    "SurveyID" bigint,
+    "Timestamp" text COLLATE pg_catalog."default",
+    "Age" double precision,
+    "Gender" text COLLATE pg_catalog."default",
+    "Country" text COLLATE pg_catalog."default",
+    state text COLLATE pg_catalog."default",
+    self_employed text COLLATE pg_catalog."default",
+    family_history text COLLATE pg_catalog."default",
+    treatment text COLLATE pg_catalog."default",
+    work_interfere text COLLATE pg_catalog."default",
+    no_employees text COLLATE pg_catalog."default",
+    remote_work text COLLATE pg_catalog."default",
+    tech_company text COLLATE pg_catalog."default",
+    benefits text COLLATE pg_catalog."default",
+    care_options text COLLATE pg_catalog."default",
+    wellness_program text COLLATE pg_catalog."default",
+    seek_help text COLLATE pg_catalog."default",
+    anonymity text COLLATE pg_catalog."default",
+    leave text COLLATE pg_catalog."default",
+    mental_health_consequence text COLLATE pg_catalog."default",
+    phys_health_consequence text COLLATE pg_catalog."default",
+    coworkers text COLLATE pg_catalog."default",
+    supervisor text COLLATE pg_catalog."default",
+    mental_health_interview text COLLATE pg_catalog."default",
+    phys_health_interview text COLLATE pg_catalog."default",
+    mental_vs_physical text COLLATE pg_catalog."default",
+    obs_consequence text COLLATE pg_catalog."default",
+    "Any additional notes or comments" text COLLATE pg_catalog."default"
+)
+
+//Table to hold the 2016 survey details//
+
+CREATE TABLE public."2016_surveydata"
+(
+    "SurveyID" bigint,
+    new_id bigint,
+    self_employed bigint,
+    company_size text COLLATE pg_catalog."default",
+    tech_company bigint,
+    mh_coverage text COLLATE pg_catalog."default",
+    mh_coverage_awareness text COLLATE pg_catalog."default",
+    mh_employer_discussion text COLLATE pg_catalog."default",
+    mh_resources_provided text COLLATE pg_catalog."default",
+    mh_anonimity text COLLATE pg_catalog."default",
+    mh_medical_leave text COLLATE pg_catalog."default",
+    mh_discussion_negative_impact text COLLATE pg_catalog."default",
+    ph_discussion_negative_impact text COLLATE pg_catalog."default",
+    mh_discussion_coworkers text COLLATE pg_catalog."default",
+    mh_discussion_supervisors text COLLATE pg_catalog."default",
+    mh_equal_ph text COLLATE pg_catalog."default",
+    mh_observed_consequences_coworkers text COLLATE pg_catalog."default",
+    prev_employers bigint,
+    prev_mh_benefits text COLLATE pg_catalog."default",
+    prev_mh_benefits_awareness text COLLATE pg_catalog."default",
+    prev_mh_discussion text COLLATE pg_catalog."default",
+    prev_mh_resources text COLLATE pg_catalog."default",
+    prev_mh_anonimity text COLLATE pg_catalog."default",
+    prev_mh_discuss_negative_consequences text COLLATE pg_catalog."default",
+    prev_ph_discuss_negative_consequences text COLLATE pg_catalog."default",
+    prev_mh_discussion_coworkers text COLLATE pg_catalog."default",
+    prev_mh_discussion_supervisors text COLLATE pg_catalog."default",
+    prev_mh_importance_employer text COLLATE pg_catalog."default",
+    prev_mh_consequences_coworkers text COLLATE pg_catalog."default",
+    future_ph_specification text COLLATE pg_catalog."default",
+    future_mh_specification text COLLATE pg_catalog."default",
+    mh_hurt_on_career text COLLATE pg_catalog."default",
+    mh_neg_view_coworkers text COLLATE pg_catalog."default",
+    mh_sharing_friends_family text COLLATE pg_catalog."default",
+    mh_bad_response_workplace text COLLATE pg_catalog."default",
+    mh_for_others_bad_response_workplace text COLLATE pg_catalog."default",
+    mh_family_history text COLLATE pg_catalog."default",
+    mh_dx_past text COLLATE pg_catalog."default",
+    mh_dx_current text COLLATE pg_catalog."default",
+    "yes_what_dx?" text COLLATE pg_catalog."default",
+    mh_dx_pro text COLLATE pg_catalog."default",
+    yes_condition_dx text COLLATE pg_catalog."default",
+    mh_sought_pro_tx bigint,
+    mh_eff_tx_impact_on_work text COLLATE pg_catalog."default",
+    mh_not_eff_tx_impact_on_work text COLLATE pg_catalog."default",
+    age bigint,
+    gender text COLLATE pg_catalog."default",
+    country_live text COLLATE pg_catalog."default",
+    live_us_state text COLLATE pg_catalog."default",
+    country_work text COLLATE pg_catalog."default",
+    work_us_state text COLLATE pg_catalog."default",
+    work_position text COLLATE pg_catalog."default",
+    remote text COLLATE pg_catalog."default",
+    quantile_age_1 text COLLATE pg_catalog."default",
+    quantile_age_2 text COLLATE pg_catalog."default"
+)
+
+///Add Foreign Key///
+ALTER TABLE "2014_surveydata" ADD CONSTRAINT "fk_2014_surveydata" FOREIGN KEY("SurveyID")
+REFERENCES "Survey" ("SurveyID");
+
+ALTER TABLE "2016_surveydata" ADD CONSTRAINT "fk_2016_surveydata" FOREIGN KEY("SurveyID")
+REFERENCES "Survey" ("SurveyID");
