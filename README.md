@@ -10,13 +10,17 @@ Data was filtered or dropped by these criteria:
 Most people identified as male in the survey. 722 respondents (72% of the total number of respondents) identified as male. 259 respondents (26% of the total number of respondents) identified as female. An exceedingly small group identified as non-binary (2%).
 \
 \
-Most respondents felt comfortable talking about mental health with their supervisors. 95 women (37% of all female respondents) and 272 men (38% of all male respondents) affirmed that they would talk to their supervisor about mental health. This suggests people felt similarly about the matter at hand, regardless of gender. However, ‘yes’, ‘no’, and ‘maybe’ responses appeared almost evenly split into thirds. This demonstrates people overall took varied approaches.
-\
-\
-Despite some inclination to share about their mental health, almost half of all respondents believed that being identified as having a mental health diagnosis would hurt their career. 134 (52%) of women believed a mental health diagnosis either had or would hurt their career. Comparatively, 313 (43%) of men believed a mental health diagnosis either had or would hurt their career. Women feared retribution more than men in this scenario. Figure A demonstrates below:
+Most respondents felt comfortable talking about mental health with their supervisors. 95 women (37% of all female respondents) and 272 men (38% of all male respondents) affirmed that they would talk to their supervisor about mental health. This suggests people felt similarly about the matter at hand, regardless of gender. However, ‘yes’, ‘no’, and ‘maybe’ responses appeared almost evenly split into thirds. This demonstrates people overall took varied approaches (Figure A). 
 \
 \
 **Figure A**
+!["gender_and_mh_discus_supv"](https://github.com/ArtTucker/mental_health_and_economics/blob/main/images/gender_and_mh_discus_supv.png)
+\
+\
+Despite some inclination to share about their mental health, almost half of all respondents believed that being identified as having a mental health diagnosis would hurt their career. 134 (52%) of women believed a mental health diagnosis either had or would hurt their career. Comparatively, 313 (43%) of men believed a mental health diagnosis either had or would hurt their career. Women feared retribution more than men in this scenario. Figure B demonstrates below:
+\
+\
+**Figure B**
 \
 !["gender_and_mh_hurt_on_career"](https://github.com/ArtTucker/mental_health_and_economics/blob/main/images/gender_and_mh_hurt_on_career.png)
 \
