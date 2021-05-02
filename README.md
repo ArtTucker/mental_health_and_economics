@@ -47,7 +47,7 @@ To train and test our dataset, we use demographics information features (age/gen
 **Features**: We use demographics information(age/gender/place of habitation), as well as facts on current and previous employer(mental health coverage plan, sensitisation towards mental illness in the company, anonymity preserved) and also insight on previous mental illness.    
 <br>
 
-For both model, we decide to split our entry data into 75% for training set and 25% testing set, because any train-test split which has more data in the training set will most likely give you better accuracy as calculated on that test set. like that the training dataset for the model can learn an effective mapping of input to output. 
+For both model, we decide to split our entry data into 75% for training set and 25% testing set, because any train-test split which has more data in the training set will most likely give you better accuracy as calculated on that test set. like that the training dataset for the model can learn and effectively map input to output. 
 When splitting the dataset, we stratify it so that each split is similar. In a classification setting, it is often chosen to ensure that the train and test sets have approximately the same percentage of samples of each target class as the complete set.
 <br>
 As now, we are using a Random Forest Classifier because of his versatility, it can be used for both classifications and regression task. It provides higher accuracy through cross validation. Compared to simple decisions trees, instead of searching for the most important feature while splitting a node, it searches for the best feature among a random subset of features.
@@ -85,7 +85,7 @@ We also can directly query the database in our pandas jupyter notebook using SQL
 <br>
 [Checkout](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/database/database_connection.ipynb) our *database_connection* script.
 Running this script will update any changes applied to our datasets on the database tables.
-Each team member have the database on his local server with up-to-date data inside.
+Each team member have the database on his local server with up-to-date data inside. We also will deploy our database on AWS server for all around access from our team.
 <br>
 Entity Relational Diagram [visit.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/database/database_ERD.png)
 <br>
