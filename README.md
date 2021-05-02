@@ -1,18 +1,6 @@
 
 # Project Overview
-Mental illness affects 1 out of every 5 adults. It costs the US about $1 trillion in lost productivity. Despite how common it is, people often avoid support. This analysis examines the technology industry, a market worth $1.6 trillion to ask: what factors contribute to a workplace that feels comfortable and receptive to mental health?
-
-# Mental Health and Economics
-
-An analytical exploration more focus toward tech-industry of the connection between mental health and economics status in The US. As today, mental illness affect millions of adults in the United States.
- 
-
-### Reason:
-Many of us have battled with depression and anxiety issues for most of our lives. We are intimately aware of how these issues can be exacerbated by as well as lead to financial hardships. We wanted to further explore the statistics and numbers underpinning this relationship.
-
-### Data Source:
-We source our data from kaggle more specifically datasets including surveys focusing on individual working in tech-company from 2014 to 2021.<br>
-[Visit](https://github.com/ArtTucker/mental_health_and_economics/tree/SylvainDessagnes_2nd_segment/resources) our resources.
+Mental illness affects 1 out of every 5 adults. It costs the US about $1 trillion in lost productivity. Despite how common it is, people often avoid support. This analysis examines responses to mental health concerns in the technology industry, a market worth $1.6 trillion to ask: what factors contribute to a workplace that feels comfortable and receptive to employees with mental health concerns?
 
 ### Team Members : 
 - Art Tucker : [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/tucker_a_branch_01) 
@@ -22,12 +10,20 @@ We source our data from kaggle more specifically datasets including surveys focu
 - Victoria Morales : [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/morales_v_branch)
 - Danielle Stauffer : [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/Stauffer_Branch)
 
+## Reason:
+Many of us have battled with depression and anxiety issues for most of our lives. We are intimately aware of how these issues can be exacerbated by as well as lead to financial hardships. We wanted to further explore the statistics and numbers underpinning this relationship.
+
+## Data Sources:
+The primary source for our data was Kaggle -- specifically, datasets from survey results focusing on individuals working in the tech industry from 2014 to 2021.<br>
+[Visit](https://github.com/ArtTucker/mental_health_and_economics/tree/SylvainDessagnes_2nd_segment/resources) our resources.
+
 # Methods
-This data comes from Open Sourcing Mental Illness, a nonprofit dedicated to raising awareness, educating, and providing resources to support mental wellness in the tech and open-source communities. The survey contains 1,434 responses, and measures attitudes towards mental health among tech workers with and without a mental health disorder. The analysis included 1,004 responses after data cleaning.
+This data comes from Open Sourcing Mental Illness (OSMI), a nonprofit dedicated to raising awareness, educating, and providing resources to support mental wellness in the tech and open-source communities. The survey contains 1,434 responses, and measures attitudes towards mental health among tech workers with and without a mental health disorder. Our primary analysis of the dataset from 2016 (the year with the greatest number of respondents) included 1,004 responses, after data cleaning.
 Data was filtered or dropped by these criteria:
 1.	Dropped rows/respondents by people who work for a company, and are NOT self-employed
 2.	Reduced rows/respondents by people who lived in countries where over 30 people contributed to the survey. 
 3.	Removed columns/answers to survey questions with over 75% NaN
+
 # Results
 Most people identified as male in the survey. 722 respondents (72% of the total number of respondents) identified as male. 259 respondents (26% of the total number of respondents) identified as female. An exceedingly small group identified as non-binary (2%).
 \
