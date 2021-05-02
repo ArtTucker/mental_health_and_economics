@@ -116,3 +116,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+.DS_Store
+database/config.py
+data_preprocessing/config.py

@@ -1,4 +1,4 @@
-# Overview of Project:
+# Mental Health and Economics
 
 An analytical exploration more focus toward tech-industry of the connection between mental health and economics status in The US. As today, mental illness affect millions of adults in the United States.
  
@@ -75,7 +75,7 @@ For our project we use an SQL database, more specifically Postgres and pgadmin t
 For example:
 - Data structure.
 - Easy access to the network.
-- Language (MySQL).
+- Language (SQL).
 - Speed.
 - Maintenance.
 - Ability to be access by more than one person.
