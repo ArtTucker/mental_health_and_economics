@@ -1,6 +1,7 @@
 
 # Add config.py:
 config.py
+config1.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
