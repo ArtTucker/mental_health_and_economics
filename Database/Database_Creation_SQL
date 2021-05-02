@@ -156,8 +156,73 @@ CREATE TABLE "dataset_2017" (
     "key" int
 );
 
-ALTER TABLE "dataset_2014" ADD CONSTRAINT "fk_dataset_2014_key" FOREIGN KEY("key")
-REFERENCES "dataset_2016" ("key");
+-- Create dataset_2017 table:
+CREATE TABLE "dataset_2019" (
+    "self_employed" text,
+    "company_size" text,
+    "tech_or_not" text,
+    "tech_it" text,
+    "employer_provide_coverage" text,
+    "mh_care_options_coverage" text,
+    "wellness_program_discuss" text,
+    "resources_mh_help" text,
+    "anonymity_protected_mh_treatment" text,
+    "leave" text,
+    "talk_ph_mh_coworkers" text,
+    "talk_mh_supervisors" text,
+    "talk_mh_employer" text,
+    "talk_mh_coworkers" text,
+    "coworker_discuss_mh" text,
+    "importance_ph_employer" text,
+    "importance_mh_employer" text,
+    "previous_employer" text,
+    "prev_tech_or_not" text,
+    "prev_mh_coverage" text,
+    "prev_options_mh_coverage" text,
+    "prev_wellness_program_discuss" text,
+    "prev_resources_mh_help" text,
+    "prev_anonymity_mh_treatment" text,
+    "prev_discuss_ph_mh" text,
+    "prev_discuss_mh_supervisors" text,
+    "prev_discuss_employer" text,
+    "prev_discuss_coworkers" text,
+    "prev_coworkers_discuss_mh" text,
+    "describe_conversation" text,
+    "prev_employer_importance_ph" text,
+    "prev_employer_importance_mh" text,
+    "currently_dx_mh" text,
+    "past_mh_disorder" text,
+    "treatment_for_mh_by_mh_professional" text,
+    "mh_family_history" text,
+    "if_mh_treated_effectively_interfere_work" text,
+    "if_mh_not_treated_effectively_interfere_work" text,
+    "not_reveal_mh_because_observations" text,
+    "share_mh_family_friends" text,
+    "interview_ph" text,
+    "why_why_not_ph" text,
+    "interview_mh" text,
+    "why_why_not_mh" text,
+    "identified_work_mh_individual" text,
+    "reaction_towards_mh" text,
+    "employer_unsuportive_response_mh" text,
+    "unsuportive_desciption" text,
+    "employer_suportive_response_mh" text,
+    "tech_industry_support_mh_issues" text,
+    "age" int,
+    "gender" text,
+    "country_live" text,
+    "state_live" text,
+    "ethnicity" text,
+    "country_work" text,
+    "state_work" text,
+    "key" int
+);
+
+ALTER TABLE "dataset_2014" ADD CONSTRAINT "fk_dataset_2014_key," FOREIGN KEY("key,")
+REFERENCES "dataset_2017" ("key");
 
 ALTER TABLE "dataset_2016" ADD CONSTRAINT "fk_dataset_2016_key" FOREIGN KEY("key")
-REFERENCES "dataset_2017" ("key");
+REFERENCES "dataset_2019" ("key");
+
+ALTER TABLE "dataset_2017" ADD CONSTRAINT "fk_dataset_2017_key" FOREIGN KEY("key")
+REFERENCES "dataset_2019" ("key");
