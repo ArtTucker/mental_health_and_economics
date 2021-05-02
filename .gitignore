@@ -112,3 +112,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+database/config.py
+.DS_Store
