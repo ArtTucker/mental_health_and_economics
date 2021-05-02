@@ -29,7 +29,7 @@ To start off we pre-process our data, make sure the values in the columns are co
 Then we encode the dataset using a label encoder.
 As now, we try to predict three different target:
 1) Can we predict if an individual is more susceptible to get a leave from work if there is suspicion or confirmation of mental health issue.
-[Script.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/machine_learning/machine_learning_test1.ipynb)
+[Script.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/machine_learning/machine_learning_from_AWS.ipynb)
 
 **Target**: If a mental health issue prompted you to request a medical leave from work, asking for that leave would be?
 We reduce the data values in the leave columns to 3.(easy/difficult/neither easy nor difficult)
@@ -40,7 +40,7 @@ To train and test our dataset, we use demographics information features (age/gen
 
    
 2) Can we predict if an individual is diagnosed with mental illness?
-[Script.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/machine_learning/machine_learning_test2.ipynb)
+[Script.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/machine_learning/machine_learning_from_AWS.ipynb)
 
 **Target**: Do you currently have a mental health disorder?
 <br>
@@ -48,7 +48,7 @@ To train and test our dataset, we use demographics information features (age/gen
 <br>
 
 3) Can we predict which work position is more likely to develop mental illness?
-[Script.]()
+[Script.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/machine_learning/machine_learning_from_AWS.ipynb)
 
 **Target**: Which of the following best describes your work position?
 <br>
