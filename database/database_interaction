@@ -1,0 +1,41 @@
+-- Create summary table:
+CREATE TABLE database_summary(
+SurveyID INT,
+Description VARCHAR)
+
+-- Table Join (2 tables):
+SELECT t1.age, t1.gender, t1.treatment, t2.age, t2.gender, t2.employer_provide_mh_coverage
+FROM dataset_2014 as t1
+INNER JOIN dataset_2019 as t2
+ON t1.key = t2.key;
+
+-- Table Join (2 tables):
+SELECT t1.gender, t1.country, t2.gender
+FROM dataset_2014 as t1
+INNER JOIN dataset_2016 as t2
+ON t1.age = t2.age
+
+SELECT t1.leave, t2.gender, t2.country
+FROM clean_dataset_2016 as t1
+INNER JOIN dataset_2014 as t2
+On t1.leave = t2.leave;
+
+-- Table Join (3 tables):
+SELECT t1.gender, t1.country, t2.gender, t3.gender
+FROM dataset_2014 as t1
+INNER JOIN dataset_2016 as t2
+ON t1.age = t2.age
+INNER JOIN dataset_2019 as t3
+ON t2.gender = t3.gender;
+
+-- Table Join (4 tables):
+SELECT t1.gender, t1.age, t2.gender, t2.age, t3.age, t3.gender. t4.age, t4.gender
+FROM dataset_2014 as t1
+INNER JOIN dataset_2016 as t2
+ON t1.age = t2.age
+INNER JOIN dataset_2017 as t3
+ON t2.gender = t3.gender
+INNER JOIN dataset_2019 as t4
+ON t3.age = t4.age;
+
+SELECT * FROM pg_stat_activity WHERE state = 'active';

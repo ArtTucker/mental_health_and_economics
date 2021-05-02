@@ -28,8 +28,7 @@ CREATE TABLE "dataset_2014" (
     "phys_health_interview" text,
     "mental_vs_physical" text,
     "obs_consequence" text,
-    "comments" text,
-    "key" int FK >- dataset_2016.year
+    "comments" text
 );
 
 -- Create dataset_2016 table:
@@ -97,8 +96,7 @@ CREATE TABLE "dataset_2016" (
     "country_work" stringL,
     "work_us_state" string,
     "work_position" string,
-    "remote" string,
-    "key" int FK >- dataset_2014.year
+    "remote" string
 );
 
 -- Create dataset_2017 table:
@@ -152,8 +150,7 @@ CREATE TABLE "dataset_2017" (
     "state_live" text,
     "ethnicity" text,
     "country_work" text,
-    "state_work" text,
-    "key" int
+    "state_work" text
 );
 
 -- Create dataset_2017 table:
@@ -214,15 +211,6 @@ CREATE TABLE "dataset_2019" (
     "state_live" text,
     "ethnicity" text,
     "country_work" text,
-    "state_work" text,
-    "key" int
+    "state_work" text
 );
 
-ALTER TABLE "dataset_2014" ADD CONSTRAINT "fk_dataset_2014_key," FOREIGN KEY("key,")
-REFERENCES "dataset_2017" ("key");
-
-ALTER TABLE "dataset_2016" ADD CONSTRAINT "fk_dataset_2016_key" FOREIGN KEY("key")
-REFERENCES "dataset_2019" ("key");
-
-ALTER TABLE "dataset_2017" ADD CONSTRAINT "fk_dataset_2017_key" FOREIGN KEY("key")
-REFERENCES "dataset_2019" ("key");
