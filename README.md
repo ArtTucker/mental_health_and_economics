@@ -1,6 +1,9 @@
 # Project Overview
 Mental illness affects 1 out of every 5 adults. It costs the US about $1 trillion in lost productivity. Despite how common it is, people often avoid support. This analysis examines responses to mental health concerns in the technology industry, a market worth $1.6 trillion to ask: what factors contribute to a workplace that feels comfortable and receptive to employees with mental health concerns?
 
+## Dashboard:
+[Google Slide Presentation](https://docs.google.com/presentation/d/1MGCToYm2dP9P64Vqa-BV66mx2AwQhjazQaETZNNopPo/edit?usp=sharing)
+
 ### Team Members : 
 - Art Tucker : [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/tucker_a_branch_01) 
 - Preeti Suryakumar : [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/preeti-01)
@@ -51,44 +54,45 @@ It also appeared respondents did not know if the workplace treated physical heal
 When asked about awareness of mental health coverage, 412 (41%) of respondents answered, “I am not sure.” Most people, with no difference among men or women, did not know about their workplace’s coverage for mental health conditions. Employers also lacked efforts to spread awareness of available resources. 708 (71%) of respondents said their employers had not discussed mental health options. This perception did not vary by gender. 
 
 
+
 ### Machine learning model:
 
-Our goal is to predict an output from a previous experience, to achieve this goal, we will use a supervised machine learning model.<br>
-This kind of model allow us to use training data to learn a link between the input, and the output. Compared to unsupervised learning, it is a more accurate and trustworthy method.<br>
+Our goal is to predict an output from a previous experience. To achieve this goal we will use a supervised machine learning model.<br>
+This form of model allows us to use training data to learn a link between the input and the output. Compared to unsupervised learning, it is a more accurate and trustworthy method.<br>
 - Datasource[Link.](https://github.com/ArtTucker/mental_health_and_economics/blob/main/database/filestoload/2016_surveydata.csv)
 <br>
 
  
-To start off we pre-process our data, make sure the values in the columns are consistent [visit.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/notebook/cleaning_dataset_2016.ipynb). Our interest here is to focus on individuals who work in a tech-company.<br> 
+To start off we pre-process our data, making sure the values in the columns are consistent [visit.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/notebook/cleaning_dataset_2016.ipynb). Our interest here is to focus on individuals who work in a tech-company.<br> 
 Then we encode the dataset using a label encoder.
-As now, we try to predict three different target:
+Next, we try to predict three different targets:
 
-1) Can we predict if an individual is more susceptible to get a leave from work if there is suspicion or confirmation of mental health issue.
+1) Can we predict if an individual is more susceptible to request a leave from work if there is suspicion or confirmation of mental health issue.
 
 **Target**: If a mental health issue prompted you to request a medical leave from work, asking for that leave would be?
 We reduce the data values in the leave columns to 3.(easy/difficult/neither easy nor difficult)
 <br>
-Our decision-making process for this selection was to find information related to mental health who can help predict the need for a work leave due to mental illness.
+Our decision-making process for this selection was to find information related to mental health which can help predict the need for a work leave due to mental illness.
 <br>   
-To train and test our dataset, we use demographics information features (age/gender/place of habitation and work), information on current and past employer(provide or not mental health insurance plan, anonymity respected in case of mental illness issue), and also some information about individual mental health status(diagnose with mental illness or treated by a professional, currently and in the past, family history)
+To train and test our dataset, we use demographic data features (age/gender/place of habitation and work), information on current and past employers (whether a mental health insurance plan was provide or not, was anonymity respected in case of mental illness issues), and also some information about individual mental health status (diagnosed with mental illness or treated by a professional, currently and in the past, family history of diagnosis).
   
 2) Can we predict if an individual is diagnosed with mental illness?
 
 **Target**: Do you currently have a mental health disorder?
 <br>
-**Features**: We use demographics information(age/gender/place of habitation), as well as facts on current and previous employer(mental health coverage plan, implication towards mental illness in the company, anonymity preserved) and also insight on previous mental illness.    
+**Features**: We use demographic data (age/gender/place of habitation), as well as facts on current and previous employers (mental health coverage plan, implication towards mental illness in the company, anonymity preserved) and also insight on previous mental illness.    
 
 3) Can we predict which work position is more likely to develop mental illness?
 
 **Target**: Which of the following best describes your work position?
 <br>
-**Features**: We use demographics information(age/gender), as well as facts on current and previous employer(mental health coverage plan), insights on previous mental illness(if diagnosed/which type of illness), and also correlation with the size of the company.  
+**Features**: We use demographic data (age/gender), as well as facts on current and previous employer(mental health coverage plan), insights on previous mental illness (if diagnosed/which type of illness), and also correlation with the size of the company.  
 
-For all models, we decide to split our entry data into 75% for training set and 25% testing set, because any train-test split which has more data in the training set will most likely give you better accuracy as calculated on that test set. like that the training dataset for the model can learn and effectively map input to output. 
-When splitting the dataset, we stratify it so that each split is similar. In a classification setting, it is often chosen to ensure that the train and test sets have approximately the same percentage of samples of each target class as the complete set.
+For all models, we decide to split our entry data into 75% for training set and 25% testing set, because any train-test split which has more data in the training set will most likely give you better accuracy as calculated on that test set. As such, the training dataset for the model can learn and effectively map input to output. 
+When splitting the dataset, we stratify it so that each split is similar. In a classification setting it is often chosen to ensure that the train and test sets have approximately the same percentage of samples of each target class as the complete set.
 <br>
-As now, we are using a Random Forest Classifier because of his versatility, it can be used for both classifications and regression task. It provides higher accuracy through cross validation. Compared to simple decisions trees, instead of searching for the most important feature while splitting a node, it searches for the best feature among a random subset of features.
-After training and testing, If we get a good accuracy score, we will be able when more data is added to predict the output of our target in an accurate way, even if we are missing data entries for it.
+Then we use a Random Forest Classifier because of its versatility; it can be used for both classifications and regression analysis. It provides higher accuracy through cross validation, compared to simple decisions trees, instead of searching for the most important feature while splitting a node. It searches for the best feature among a random subset of features.
+After training and testing, if we get a good accuracy score, we will be able to predict the output of our target in an accurate way when more data is added, even if we are missing some data entries.
 <br>
 <br>
 **Benefits**:
@@ -98,16 +102,16 @@ After training and testing, If we get a good accuracy score, we will be able whe
 - Better accuracy than other classification algorithms.
 
 **Limitations**:
-- The main limitation of random forest is that many trees can make the algorithm too slow and ineffective for real-time predictions.
+- The main limitation of the random forest model is that many trees can make the algorithm too slow and ineffective for real-time predictions.
 
-In addition, we pursue our machine learning exploratory by using an Oversampling and Undersampling algorithm.
+In addition, we pursue our machine learning exploration by using an Oversampling and Undersampling algorithm.
 <br>
-Oversampling is capable of improving resolution and signal-to-noise ratio, and can be helpful in avoiding aliasing and phase distortion by relaxing anti-aliasing filter performance requirements but this method can result in overfitting for some models due to duplicates examples from the minority class in the training dataset.
-So far Oversampling look better because we keep all the information in the training dataset. With undersampling we drop a lot of information. Even if this dropped information belongs to the majority class, it is useful information for a modeling algorithm.
+Oversampling is capable of improving resolution and signal-to-noise ratio, and can be helpful in avoiding aliasing and phase distortion by relaxing anti-aliasing filter performance requirements. However, this method can result in overfitting for some models due to duplicates examples from the minority class in the training dataset.
+So far Oversampling looks better, because we keep all the information in the training dataset. With undersampling we drop a lot of data. Even if this dropped data belongs to the majority class, it is useful information for a modeling algorithm.
 
 ### Database:
 
-For our project we use an SQL database, more specifically Postgres and pgadmin to interact with it. In our case, knowing that we are not going to work with a huge volumes of data, there are more advantages for us to use a relational database management system.
+For our project we use an SQL database, more specifically Postgres and pgadmin to interact with it. In our case, knowing that we are not going to work with a huge volumes of data, there are more advantages for us to use a relational database management system. We will also be hosting the database on AWS for public access.
 
 For example:
 - Data structure.
@@ -118,7 +122,6 @@ For example:
 - Ability to be access by more than one person.
 
 Entity Relational Diagram [visit.]()
-
 
 Using python package sqlalchemy, and the needed modules (create_engine/session) we build a database with our selected data and are able to preprocess it using python/pandas and then upload it into our database **Final_project_mental_health**, as well as imported it from the database into any python script we are working on.
 We also can directly query the database in our pandas jupyter notebook using SQL code.
