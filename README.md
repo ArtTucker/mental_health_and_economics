@@ -45,7 +45,7 @@ To train and test our dataset, we use demographics information features (age/gen
 **Target**: Do you currently have a mental health disorder?
 <br>
 **Features**: We use demographics information(age/gender/place of habitation), as well as facts on current and previous employer(mental health coverage plan, implication towards mental illness in the company, anonymity preserved) and also insight on previous mental illness.    
-<br>
+
 
 3) Can we predict which work position is more likely to develop mental illness?
 
