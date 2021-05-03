@@ -1,7 +1,7 @@
 # Project Overview
 Mental illness affects 1 out of every 5 adults. It costs the US about $1 trillion in lost productivity. Despite how common it is, people often avoid support. This analysis examines responses to mental health concerns in the technology industry, a market worth $1.6 trillion to ask: what factors contribute to a workplace that feels comfortable and receptive to employees with mental health concerns?
 
-## Dashboard:
+### Presentation:
 [Google Slide Presentation](https://docs.google.com/presentation/d/1MGCToYm2dP9P64Vqa-BV66mx2AwQhjazQaETZNNopPo/edit?usp=sharing)
 
 ### Team Members : 
