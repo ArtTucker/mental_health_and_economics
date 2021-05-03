@@ -26,7 +26,7 @@ Data was filtered or dropped by these criteria:
 2.	Reduced rows/respondents by people who lived in countries where over 30 people contributed to the survey. 
 3.	Removed columns/answers to survey questions with over 75% NaN entires.
 
-# Results
+# Analysis and Results
 Most people identified as male in the survey. 722 respondents (72% of the total number of respondents) identified as male. 259 respondents (26% of the total number of respondents) identified as female. An exceedingly small group identified as non-binary (2%).
 \
 \
