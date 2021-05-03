@@ -53,7 +53,7 @@ It also appeared respondents did not know if the workplace treated physical heal
 \
 When asked about awareness of mental health coverage, 412 (41%) of respondents answered, “I am not sure.” Most people, with no difference among men or women, did not know about their workplace’s coverage for mental health conditions. Employers also lacked efforts to spread awareness of available resources. 708 (71%) of respondents said their employers had not discussed mental health options. This perception did not vary by gender. 
 
-
+***Additional Visualizations***: to view additional analysis visualizations created so far, please visit our [images folder](https://github.com/ArtTucker/mental_health_and_economics/tree/main/images).
 
 ### Machine learning model:
 
@@ -127,6 +127,9 @@ Using python package sqlalchemy, and the needed modules (create_engine/session) 
 We also can directly query the database in our pandas jupyter notebook using SQL code.
 <br>
 
+### Dashboard:
+
+Our current plans for our dashboard will be an interactive Tableau page that will allow the viewer to explore how attitudes towards mental health concerns has changed in the workplace (if at all) over the course of the last five years.
 
 # Summary
 Without information, people make decisions based on personal biases, opinions or best guesses. Despite evidence to the contrary, workers believed that if an employer identified them with a mental health condition, then their careers would suffer. This felt more probable for women than men, a possible amplification of women’s minority status in the tech industry. Representing only 1 out every 4 workers, women already face different characterizations than men, because of their poorer remonstrance. While workers had not seen negative consequences for a mental health diagnosis among coworkers, they also did not notice employers spreading awareness of mental health resources or coverage. Omission in discussions prevents normalization of the subject. It could be affecting people’s willingness to be identified as having a mental health condition. Even for this survey, only 420 (41%) of the total respondents were willing to answer if they had a current mental health diagnosis.
