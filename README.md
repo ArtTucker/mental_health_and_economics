@@ -1,4 +1,3 @@
-
 # Project Overview
 Mental illness affects 1 out of every 5 adults. It costs the US about $1 trillion in lost productivity. Despite how common it is, people often avoid support. This analysis examines responses to mental health concerns in the technology industry, a market worth $1.6 trillion to ask: what factors contribute to a workplace that feels comfortable and receptive to employees with mental health concerns?
 
@@ -15,14 +14,14 @@ Many of us have battled with depression and anxiety issues for most of our lives
 
 ## Data Sources:
 The primary source for our data was Kaggle -- specifically, datasets from survey results focusing on individuals working in the tech industry from 2014 to 2021.<br>
-[Visit](https://github.com/ArtTucker/mental_health_and_economics/tree/SylvainDessagnes_2nd_segment/resources) our resources.
+[Visit](https://github.com/ArtTucker/mental_health_and_economics/resources) our resources.
 
 # Methods
 This data comes from Open Sourcing Mental Illness (OSMI), a nonprofit dedicated to raising awareness, educating, and providing resources to support mental wellness in the tech and open-source communities. The survey contains 1,434 responses, and measures attitudes towards mental health among tech workers with and without a mental health disorder. Our primary analysis of the dataset from 2016 (the year with the greatest number of respondents) included 1,004 responses, after data cleaning.
 Data was filtered or dropped by these criteria:
 1.	Dropped rows/respondents by people who work for a company, and are NOT self-employed
 2.	Reduced rows/respondents by people who lived in countries where over 30 people contributed to the survey. 
-3.	Removed columns/answers to survey questions with over 75% NaN
+3.	Removed columns/answers to survey questions with over 75% NaN entires.
 
 # Results
 Most people identified as male in the survey. 722 respondents (72% of the total number of respondents) identified as male. 259 respondents (26% of the total number of respondents) identified as female. An exceedingly small group identified as non-binary (2%).
@@ -54,12 +53,12 @@ When asked about awareness of mental health coverage, 412 (41%) of respondents a
 
 ### Machine learning model:
 
-Our goal is to predict an output from a previous experience, to achieve this goal, we will use supervised machine learning model.<br>
+Our goal is to predict an output from a previous experience, to achieve this goal, we will use a supervised machine learning model.<br>
 This kind of model allow us to use training data to learn a link between the input, and the output. Compared to unsupervised learning, it is a more accurate and trustworthy method.<br>
 - Datasource: [visit.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/resources/clean_data/clean_dataset_2016.csv)
 <br>
   
-To start off we pre-process our data, make sure the values in the columns are consistent [visit.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/notebook/cleaning_dataset_2016.ipynb). Our interest here is to focus on individual who work in a tech-company.<br> 
+To start off we pre-process our data, make sure the values in the columns are consistent [visit.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/notebook/cleaning_dataset_2016.ipynb). Our interest here is to focus on individuals who work in a tech-company.<br> 
 Then we encode the dataset using a label encoder.
 As now, we try to predict two different target:
 1) Can we predict if an individual is more susceptible to get a leave from work if there is suspicion or confirmation of mental health issue.
