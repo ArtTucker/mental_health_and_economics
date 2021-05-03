@@ -20,16 +20,16 @@ We source our data from kaggle more specifically datasets including surveys focu
 
 ### Machine learning model:
 
-Our goal is to predict an output from a previous experience, to achieve this goal, we will use supervised machine learning model.<br>
+Our goal is to predict an output from a previous experience, to achieve this goal, we will use a supervised machine learning model.<br>
 This kind of model allow us to use training data to learn a link between the input, and the output. Compared to unsupervised learning, it is a more accurate and trustworthy method.<br>
-- Datasource: [visit.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/resources/clean_data/clean_dataset_2016.csv)
+- Datasource[Link.](https://github.com/ArtTucker/mental_health_and_economics/blob/main/database/filestoload/2016_surveydata.csv)
 <br>
   
-To start off we pre-process our data, make sure the values in the columns are consistent [visit.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/notebook/cleaning_dataset_2016.ipynb). Our interest here is to focus on individual who work in a tech-company.<br> 
+To start off we pre-process our data, make sure the values in the columns are consistent. Our interest here is to focus on individual who work in a tech-company.<br> 
 Then we encode the dataset using a label encoder.
 As now, we try to predict three different target:
 1) Can we predict if an individual is more susceptible to get a leave from work if there is suspicion or confirmation of mental health issue.
-[Script.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/machine_learning/machine_learning_from_AWS.ipynb)
+
 
 **Target**: If a mental health issue prompted you to request a medical leave from work, asking for that leave would be?
 We reduce the data values in the leave columns to 3.(easy/difficult/neither easy nor difficult)
@@ -40,7 +40,7 @@ To train and test our dataset, we use demographics information features (age/gen
 
    
 2) Can we predict if an individual is diagnosed with mental illness?
-[Script.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/machine_learning/machine_learning_from_AWS.ipynb)
+
 
 **Target**: Do you currently have a mental health disorder?
 <br>
@@ -48,7 +48,6 @@ To train and test our dataset, we use demographics information features (age/gen
 <br>
 
 3) Can we predict which work position is more likely to develop mental illness?
-[Script.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/machine_learning/machine_learning_from_AWS.ipynb)
 
 **Target**: Which of the following best describes your work position?
 <br>
@@ -91,19 +90,13 @@ For example:
 Using python package sqlalchemy, and the needed modules (create_engine/session) we build a database with our selected data and are able to preprocess it using python/pandas and then upload it into our database **Final_project_mental_health**, as well as imported it from the database into any python script we are working on.
 We also can directly query the database in our pandas jupyter notebook using SQL code.
 <br>
-[Checkout](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/database/database_connection_local.ipynb) our *database_connection* script.
+[Checkout]()
 Running this script will update any changes applied to our datasets on the database tables.
-Each team member have the database on his local server with up-to-date data inside. 
-<br>
-Entity Relational Diagram [visit.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/database/Database_ERD.png~main)
-<br>
-SQL code for database creation [visit.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/database/database_creation_SQL)
-<br>
-Ongoing database work [here.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/database/database_interaction)
+Each team member have the database on his local server with up-to-date data inside.
+In addition, we also can access our database on AWS server, like that we have all around access for our team.
+
+Entity Relational Diagram [visit.]()
 
 In addition, we also can access our database on AWS server, like that we have all around access for our team.
-[Checkout.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/database/database_connection_AWS.ipynb)
 
-### Dashboard:
 
-Click [here](https://docs.google.com/presentation/d/1MGCToYm2dP9P64Vqa-BV66mx2AwQhjazQaETZNNopPo/edit#slide=id.gd5a267e349_2_373) to review our ongoing story.
