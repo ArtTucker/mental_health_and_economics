@@ -87,16 +87,12 @@ For example:
 - Maintenance.
 - Ability to be access by more than one person.
 
-Using python package sqlalchemy, and the needed modules (create_engine/session) we build a database with our selected data and are able to preprocess it using python/pandas and then upload it into our database **Final_project_mental_health**, as well as imported it from the database into any python script we are working on.
-We also can directly query the database in our pandas jupyter notebook using SQL code.
-<br>
+
 [Checkout]()
-Running this script will update any changes applied to our datasets on the database tables.
-Each team member have the database on his local server with up-to-date data inside.
-In addition, we also can access our database on AWS server, like that we have all around access for our team.
+
 
 Entity Relational Diagram [visit.]()
 
-In addition, we also can access our database on AWS server, like that we have all around access for our team.
+
 
 
