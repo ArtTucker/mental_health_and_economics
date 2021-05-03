@@ -7,8 +7,8 @@ An analytical exploration more focus toward tech-industry of the connection betw
 Many of us have battled with depression and anxiety issues for most of our lives. We are intimately aware of how these issues can be exacerbated by as well as lead to financial hardships. We wanted to further explore the statistics and numbers underpinning this relationship.
 
 ### Data Source:
-We source our data from kaggle more specifically datasets including surveys focusing on individual working in tech-company from 2014 to 2021.<br>
-[Visit](https://github.com/ArtTucker/mental_health_and_economics/tree/SylvainDessagnes_2nd_segment/resources) our resources.
+We source our data from kaggle more specifically datasets including surveys focusing on individual working in tech-company.<br>
+[Visit](https://github.com/ArtTucker/mental_health_and_economics/tree/main/resources) our resources.
 
 ### Team Members : 
 - Art Tucker : [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/tucker_a_branch_01) 
