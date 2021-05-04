@@ -29,31 +29,41 @@ Data was filtered or dropped by these criteria:
 # Analysis and Results
 Most people identified as male in the survey. 722 respondents (72% of the total number of respondents) identified as male. 259 respondents (26% of the total number of respondents) identified as female. An exceedingly small group identified as non-binary (2%).
 \
-\
 Most respondents said they felt comfortable talking about mental health with their supervisors. 95 women (37% of all female respondents) and 272 men (38% of all male respondents) affirmed that they would talk to their supervisor about mental health. This suggests people had similar levels of comfort discussing mental health issues, regardless of gender. However, ‘yes’, ‘no’, and ‘maybe’ responses were almost evenly split into thirds. This demonstrates people, overall, had distributive approaches.
 \
-\
-**Figure A**
-!["gender_and_mh_discus_supv"](https://github.com/ArtTucker/mental_health_and_economics/blob/main/images/gender_and_mh_discus_supv.png)
-\
+***Figure A***
+!["gender_and_mh_discus_supv"](images/gender_and_mh_discus_supv.png)
 \
 Despite some inclination to share about their mental health, almost half of all respondents believed that being identified as having a mental health diagnosis would hurt their career. 134 (52%) of women believed a mental health diagnosis either had or would hurt their career. Comparatively, 313 (43%) of men believed a mental health diagnosis either had or would hurt their career. Women feared retribution more than men in this scenario. 
 \
+***Figure B***
 \
-**Figure B**
-\
-!["gender_and_mh_hurt_on_career"](https://github.com/ArtTucker/mental_health_and_economics/blob/main/images/gender_and_mh_hurt_on_career.png)
-\
+!["gender_and_mh_hurt_on_career"](images/gender_and_mh_hurt_on_career.png)
 \
 Nevertheless, when asked if they had observed co workers receiving negative consequences for revealing a mental health condition, almost 90% of both men and women said ‘no.’ Even though people feared for their careers if they were identified with a mental health condition, they also lacked any observable evidence of others receiving different treatment because of a mental health condition.
 \
-\
 It also appeared respondents did not know if the workplace treated physical health and mental health the same. Just over 40% of men and women said, ‘I don’t know.’ 80 women (31% of female respondents) and 219 men (30% of male respondents) commented, ‘yes.’ Gender did not affect perception in this case. It could be implied that factors, such as uncertainty rather than observation of negative workplace practices, are influencing people and their choices about mental health in the workplace. 
-\
 \
 When asked about awareness of mental health coverage, 412 (41%) of respondents answered, “I am not sure.” Most people, with no difference among men or women, did not know about their workplace’s coverage for mental health conditions. Employers also lacked efforts to spread awareness of available resources. 708 (71%) of respondents said their employers had not discussed mental health options. This perception did not vary by gender. 
 
-***Additional Visualizations***: to view additional analysis visualizations created so far, please visit our [images folder](https://github.com/ArtTucker/mental_health_and_economics/tree/main/images).
+**Additional Visualizations**:
+***Willingness to discuss mental health issues with supervisors, by Country, as % of totals.***
+![Willingness to discuss mental health issues with supervisors, by Country, as % of totals](images/country_viz.png)
+***Mental health insurance coverage (and awareness of), by Country, as % of totals.***
+![Mental health insurance coverage (and awareness of), by Country, as % of totals](images/mh_coverage_country.png)
+***Mental health insurance coverage (and awareness of), by company size.***
+![Mental health insurance coverage (and awareness of), by company size](images/mh_covg_aware_by_comp_size.png)
+***Mental health insurance coverage (and awareness of), in non-US countries, as % of total.***
+![Mental health insurance coverage (and awareness of), in non-US countries, as % of total](images/mh_covg_not_USA.png)
+***Mental health insurance coverage (and awareness of), in the US, as % of total.***
+![Mental health insurance coverage (and awareness of), in the US, as % of total](images/mh_covg_USA.png)
+***Presence of mental health diagnosis, by gender, as % of each gender.***
+![Presence of mental health diagnosis, by gender, as % of each gender](images/mh_diagnosis_gender.png)
+***Willingness to discuss mental health issues with coworkers, by age.***
+![Willingness to discuss mental health issues with coworkers, by age](images/mh_discus_cowork_impact.png)
+
+
+ to view additional analysis visualizations created so far, please visit our [images folder](https://github.com/ArtTucker/mental_health_and_economics/tree/main/images).
 
 ### Machine learning model:
 
