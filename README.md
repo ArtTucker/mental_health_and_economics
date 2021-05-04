@@ -47,23 +47,20 @@ It also appeared respondents did not know if the workplace treated physical heal
 When asked about awareness of mental health coverage, 412 (41%) of respondents answered, “I am not sure.” Most people, with no difference among men or women, did not know about their workplace’s coverage for mental health conditions. Employers also lacked efforts to spread awareness of available resources. 708 (71%) of respondents said their employers had not discussed mental health options. This perception did not vary by gender. 
 
 **Additional Visualizations**:
-***Willingness to discuss mental health issues with supervisors, by Country, as % of totals.***
-![Willingness to discuss mental health issues with supervisors, by Country, as % of totals](images/country_viz.png)
-***Mental health insurance coverage (and awareness of), by Country, as % of totals.***
-![Mental health insurance coverage (and awareness of), by Country, as % of totals](images/mh_coverage_country.png)
+\
 ***Mental health insurance coverage (and awareness of), by company size.***
 ![Mental health insurance coverage (and awareness of), by company size](images/mh_covg_aware_by_comp_size.png)
+\
 ***Mental health insurance coverage (and awareness of), in non-US countries, as % of total.***
 ![Mental health insurance coverage (and awareness of), in non-US countries, as % of total](images/mh_covg_not_USA.png)
+\
 ***Mental health insurance coverage (and awareness of), in the US, as % of total.***
 ![Mental health insurance coverage (and awareness of), in the US, as % of total](images/mh_covg_USA.png)
-***Presence of mental health diagnosis, by gender, as % of each gender.***
-![Presence of mental health diagnosis, by gender, as % of each gender](images/mh_diagnosis_gender.png)
+\
 ***Willingness to discuss mental health issues with coworkers, by age.***
 ![Willingness to discuss mental health issues with coworkers, by age](images/mh_discus_cowork_impact.png)
 
-
- to view additional analysis visualizations created so far, please visit our [images folder](https://github.com/ArtTucker/mental_health_and_economics/tree/main/images).
+to view additional analysis visualizations created so far, please visit our [images folder](https://github.com/ArtTucker/mental_health_and_economics/tree/main/images).
 
 ### Machine learning model:
 
