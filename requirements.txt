@@ -1,0 +1,43 @@
+-- Packages:
+
+# Data cleaning:
+- pandas
+- numpy
+
+# Database:
+- sqlalchemy
+- sqlalchemy.orm
+
+# Machine Learning:
+- sklearn.preprocessing
+- sklearn.model_selection
+- collections
+- sklearn.linear_model
+- sklearn.metrics
+- imblearn.metrics
+- sklearn.ensemble
+- imblearn.over_sampling
+
+# Visualizations:
+matplotlib.pyplot
+
+-- Libraries:
+
+# Database:
+- create_engine
+- Session
+
+# Machine Learning:
+- LabelEncoder
+- StandardScaler
+- train_test_split
+- Counter
+- LogisticRegression
+- accuracy_score
+- confusion_matrix
+- classification_report_imbalanced
+- RandomForestClassifier
+- RandomOverSampler
+
+# Visualizations:
+- figure
