@@ -53,57 +53,80 @@ When asked about awareness of mental health coverage, 412 (41%) of respondents a
 
 ### Machine learning model:
 
-Our goal is to predict an output from a previous experience, to achieve this goal, we will use a supervised machine learning model.<br>
+Our intention is to predict an output from a previous experience, to achieve it, we will use a supervised machine learning model.<br>
 This kind of model allow us to use training data to learn a link between the input, and the output. Compared to unsupervised learning, it is a more accurate and trustworthy method.<br>
-- Datasource[Link.](https://github.com/ArtTucker/mental_health_and_economics/blob/main/database/filestoload/2016_surveydata.csv)
+- Datasource [Link.](https://github.com/ArtTucker/mental_health_and_economics/blob/main/database/filestoload/2016_surveydata.csv)
 <br>
-
- 
-To start off we pre-process our data, make sure the values in the columns are consistent [visit.](https://github.com/ArtTucker/mental_health_and_economics/blob/SylvainDessagnes_2nd_segment/notebook/cleaning_dataset_2016.ipynb). Our interest here is to focus on individuals who work in a tech-company.<br> 
-Then we encode the dataset using a label encoder.
-As now, we try to predict three different target:
-
-1) Can we predict if an individual is more susceptible to get a leave from work if there is suspicion or confirmation of mental health issue.
-
-**Target**: If a mental health issue prompted you to request a medical leave from work, asking for that leave would be?
-We reduce the data values in the leave columns to 3.(easy/difficult/neither easy nor difficult)
-<br>
-Our decision-making process for this selection was to find information related to mental health who can help predict the need for a work leave due to mental illness.
-<br>   
-To train and test our dataset, we use demographics information features (age/gender/place of habitation and work), information on current and past employer(provide or not mental health insurance plan, anonymity respected in case of mental illness issue), and also some information about individual mental health status(diagnose with mental illness or treated by a professional, currently and in the past, family history)
   
-2) Can we predict if an individual is diagnosed with mental illness?
+- Goal:<br>
+Our goal is to be able to classifies in an accurate manner if an individual is currently diagnosed with a Mental Health disorder according to each individual answers present in the dataset . 
+Interest here is to focus on individuals who work in a tech-company.<br>
+After training and testing our data, and if we add more answers, we will be able to predict an individual Mental Health disorder even if these entries are missing on the new data. 
 
-**Target**: Do you currently have a mental health disorder?
-<br>
-**Features**: We use demographics information(age/gender/place of habitation), as well as facts on current and previous employer(mental health coverage plan, implication towards mental illness in the company, anonymity preserved) and also insight on previous mental illness.    
+  
+- Data preprocessing:<br>
 
-3) Can we predict which work position is more likely to develop mental illness?
+Couple steps have been necessary to obtained our desired features to plug-in into our machine learning model:<br>
+** Filter our dataset to only keep answers for individual who work in a tech-company.<br>
+** Re-code values entries in the age column.<br>
+** Re-code values entries in the work-position column for consistency purpose.<br>
+** Bins together values in the company-size column as some entries were not usable yet.<br>
+** Re-code values entries in the medical-leave column for consistency purpose.<br>
+** Clean gender column from duplicate ou incorrect entries.<br>
+** Ensure answers consistency for mh-family-history, mh-sought-pro_tx, mh-dx-past, mh-coverage, prev-mh-benefits, prev-employers, country-live.<br>
+**  Create visualizations of cleaning step for better understanding of our features.<br>
 
-**Target**: Which of the following best describes your work position?
-<br>
-**Features**: We use demographics information(age/gender), as well as facts on current and previous employer(mental health coverage plan), insights on previous mental illness(if diagnosed/which type of illness), and also correlation with the size of the company.  
+Once we got all desired features cleaned up for our model, we encoded our data using a label encoder instance. This step allows us to change text values into unique numbers identifier and then use a machine learning algorithm on it.
 
-For all models, we decide to split our entry data into 75% for training set and 25% testing set, because any train-test split which has more data in the training set will most likely give you better accuracy as calculated on that test set. like that the training dataset for the model can learn and effectively map input to output. 
+- Features and targets engineering:<br>
+
+Our target is: "Do you currently have a mental health disorder?"<br> 
+  
+To predict it, we decided to use insights related to the target:<br>
+** Demographics information: Age / Gender / Country where an individual live and works.<br>
+** Company information: Size / Work position.<br>
+** Current and previous employers' information: Provide MH benefits / Current employer / Previous employer.<br>
+** Information about mental health disorder: Have been previously diagnosed with MH disorder / Able to take a leave if diagnosed with MH disorder / MH disorder from family history / Have been seeking help from  MH professional.<br>
+
+- Description of training and testing sets:<br>
+
+We decide to split our entry data into 75% for training set and 25% testing set, because any train-test split which has more data in the training set will most likely give you better accuracy as calculated on that test set. like that the training dataset for the model can learn and effectively map input to output. 
 When splitting the dataset, we stratify it so that each split is similar. In a classification setting, it is often chosen to ensure that the train and test sets have approximately the same percentage of samples of each target class as the complete set.
-<br>
+
+
+- Model:<br>
+
 As now, we are using a Random Forest Classifier because of his versatility, it can be used for both classifications and regression task. It provides higher accuracy through cross validation. Compared to simple decisions trees, instead of searching for the most important feature while splitting a node, it searches for the best feature among a random subset of features.
-After training and testing, If we get a good accuracy score, we will be able when more data is added to predict the output of our target in an accurate way, even if we are missing data entries for it.
-<br>
-<br>
-**Benefits**:
+We will use it for his classification abilities.<br>
+*Benefits:*
+-  Random forest builds multiple decision trees and merges them together to get a more accurate and stable prediction.
+- It provides higher accuracy through cross validation. Random forest classifier will handle the missing values and maintain the accuracy of data.
+- If there are more trees, it will lower the risk of over-fitting trees in the model.
 - Robust to outliers.
 - Works well with non-linear data.
-- Lower risk of over-fitting.
-- Better accuracy than other classification algorithms.
-
-**Limitations**:
+- Better accuracy than other classification algorithms.(Example: Stochastic Gradient Descent/K-Nearest Neighbours/...)<br>
+*Limitations:*
 - The main limitation of random forest is that many trees can make the algorithm too slow and ineffective for real-time predictions.
+- Since a random forest combines multiple decision trees, it becomes more difficult to interpret.<br>
 
-In addition, we pursue our machine learning exploratory by using an Oversampling and Undersampling algorithm.
-<br>
-Oversampling is capable of improving resolution and signal-to-noise ratio, and can be helpful in avoiding aliasing and phase distortion by relaxing anti-aliasing filter performance requirements but this method can result in overfitting for some models due to duplicates examples from the minority class in the training dataset.
-So far Oversampling look better because we keep all the information in the training dataset. With undersampling we drop a lot of information. Even if this dropped information belongs to the majority class, it is useful information for a modeling algorithm.
+To improve our classification we also run an oversampling model. It adjusts the class distribution of a data set (the ratio between the different classes/categories represented) by randomly duplicating examples from the minority class and adding them to the training dataset. Doing so should help to achieve a better predictions accuracy score.
+
+- Model improvements, changes, additional training:<br>
+
+To keep improving our model, we will keep refining our features and might add some more if it helps to boost our predictions accuracy.  
+We stop using under-sampling as it did not help to improve our model. Indeed, under-sampling can result in dropping a lot of information. Even if this dropped information belongs to the majority class, it is useful information for a modeling algorithm.<br>
+
+Our model is actually divided on 75% training data and 25% testing data. 
+To train further our data, we are thinking about adding information into our training data out-of surveys answer's from a different year. More data will likely give us more accurate predictions since it will be trained on more information.
+
+- Analyse of the Model:<br>
+
+After using Random Forest Classifier to predict our target based on related features, our accuracy score is 78.6%, with a precision of 79%, a recall(sensitivity) of 79% and a F1 score of 0.79.<br>
+The high average F1 score tell us that sensitivity and precision are balanced in our model.<br>
+We can also analyse that our model have better performance while predicting a negative MH diagnostic than a positive one. 
+
+After oversampling our accuracy score and all other parameters are better 83%, which is good and means our model is predicting more than 4 out of 5 times the correct output.
+
 
 ### Database:
 
