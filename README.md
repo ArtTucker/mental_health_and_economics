@@ -55,10 +55,10 @@ When asked about awareness of mental health coverage, 412 (41%) of respondents a
 
 Our intention is to predict an output from a previous experience, to achieve it, we will use a supervised machine learning model.<br>
 This kind of model allow us to use training data to learn a link between the input, and the output. Compared to unsupervised learning, it is a more accurate and trustworthy method.<br>
-- Datasource [Link.](https://github.com/ArtTucker/mental_health_and_economics/blob/main/database/filestoload/2016_surveydata.csv)
-<br>
+- Datasource [Link.](https://github.com/ArtTucker/mental_health_and_economics/blob/main/database/filestoload/2016_surveydata.csv)<br>
   
 - Goal:<br>
+
 Our goal is to be able to classifies in an accurate manner if an individual is currently diagnosed with a Mental Health disorder according to each individual answers present in the dataset . 
 Interest here is to focus on individuals who work in a tech-company.<br>
 After training and testing our data, and if we add more answers, we will be able to predict an individual Mental Health disorder even if these entries are missing on the new data. 
