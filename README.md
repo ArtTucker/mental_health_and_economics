@@ -105,6 +105,7 @@ We will use it for his classification abilities.<br>
 - Robust to outliers.
 - Works well with non-linear data.
 - Better accuracy than other classification algorithms.(Example: Stochastic Gradient Descent/K-Nearest Neighbours/...)<br>
+
 *Limitations:*
 - The main limitation of random forest is that many trees can make the algorithm too slow and ineffective for real-time predictions.
 - Since a random forest combines multiple decision trees, it becomes more difficult to interpret.<br>
