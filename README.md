@@ -1,9 +1,9 @@
 
 # Project Overview
-Mental illness affects 1 out of every 5 adults. It costs the US about $1 trillion in lost productivity. Despite how common it is, people often avoid support. This analysis examines the technology industry, a market worth $1.6 trillion to ask: what factors contribute to a workplace that feels comfortable and receptive to mental health?
+Mental illness affects 1 out of every 5 adults. It costs the US about $1 trillion in lost annual productivity. Despite how common this condition is, people often avoid seeking support. This analysis examines the technology industry, a market worth $1.6 trillion to ask: what factors can contribute to creating an employee workplace that feels comfortable and receptive to mental health support?
  
 # Reason:
-The world is in the middle of a health care crisis. Unfortunately, the Covid 19 pandemic represents only part of a larger story. Anxiety and depression are also on the rise. People cannot find the help that they need to address these mental health conditions. According to an American Psychological Association poll of nearly 1,800 psychologists, 74 percent said more patients were seeking treatment for anxiety disorders than before the pandemic. Nearly 30 percent of providers reported seeing more patients overall (New York Times, 2021). Research that identifies the need for employers to step up to meet this crisis will affect policy and lives. This study is important for showing how and what we communicate regarding mental health services to staff to maintain or improve business operations.
+The world is in the middle of a health care crisis. Unfortunately, the Covid 19 pandemic represents only part of a larger story. Anxiety and depression are also on the rise. People cannot find the help that they need to address these mental health conditions. According to an American Psychological Association poll of nearly 1,800 psychologists, 74 percent said more patients were seeking treatment for anxiety disorders than before the pandemic. Nearly 30 percent of providers reported seeing more patients overall (New York Times, 2021). Research that identifies the need for employers to step up to meet this crisis will affect policy and lives. This study is important for showing how and what we communicate regarding mental health services to staff can influence the maintenance and/ or improvement of business operations.
 
 ### Team Members: 
 - Art Tucker : [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/tucker_a_branch_01) 
@@ -14,21 +14,23 @@ The world is in the middle of a health care crisis. Unfortunately, the Covid 19 
 - Danielle Stauffer : [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/Stauffer_Branch)
 
 # Data Source/ Pre-Processing
-This data comes from Open Sourcing Mental Illness, a nonprofit dedicated to raising awareness, educating, and providing resources to support mental wellness in the tech and open-source communities. The survey contains 1,434 responses, and measures attitudes towards mental health among tech workers with and without a mental health disorder. The analysis included 1,004 responses after data cleaning. Data was filtered or dropped by these criteria:
+This data comes from Open Sourcing Mental Illness, a nonprofit dedicated to raising awareness, educating, and providing resources to support mental wellness in the tech and open-source communities. The survey contains 1,434 responses, and measures attitudes towards mental health among tech workers with and without a mental health disorder. The analysis included 1,004 responses after data cleaning.
+Data was filtered or dropped by these criteria:
 1.	Dropped rows/respondents by people who work for a company, and are NOT self-employed
-3.	Reduced rows/respondents by people who lived in countries where over 30 people contributed to the survey. 
-4.	Removed columns/answers to survey questions with over 75% NaN
-5.	Re-code values entries in the age column.
-6.	Re-code values entries in the work-position column for consistency purpose.
-7.	Bins together values in the company-size column as some entries were not usable yet.
-8.	Re-code values entries in the medical-leave column for consistency purpose.
-9.	Re-code gender column to address inconsistent entries.
-10.	Ensure answers consistency for mh-family-history, mh-sought-pro_tx, mh-dx-past, mh-coverage, prev-mh-benefits, prev-employers, country-live.
+2.	Reduced rows/respondents by people who lived in countries where over 30 people contributed to the survey. 
+3.	Removed columns/answers to survey questions with over 75% NaN
+4.	Re-code values entries in the age column.
+5.	Re-code values entries in the work-position column for consistency purpose.
+6.	Bins together values in the company-size column as some entries were not usable yet.
+7.	Re-code values entries in the medical-leave column for consistency purpose.
+8.	Re-code gender column to address inconsistent entries.
+9.	Ensure answers consistency for mh-family-history, mh-sought-pro_tx, mh-dx-past, mh-coverage, prev-mh-benefits, prev-employers, country-live.
+
 \
 Pandas/Python supported this pre-processing of information.
 
 # Database
-To host information and ensure public access across 6 members, Amazon Web services hosts the information. An SQL, relational database creates tables and links them by primary and foreign keys across years. Postgres and pgadmin best suited the project because the survey only contains about a 1000 records. Other benefits included:
+To host information and ensure public access across 6 members, Amazon Web services hosts the information. An SQL relational database creates tables and links them by primary and foreign keys across years. Postgres and pgadmin best suited the project because the survey only contains about a 1000 records. Other benefits included:
 \
 •	Data structure.
 \
@@ -44,7 +46,7 @@ To host information and ensure public access across 6 members, Amazon Web servic
 \
 Please see Entity Relational Diagram for details about table structure.
 \
-To load the data into the tables, we used a python package, sqlalchemy, and modules, such as create_engine/session.  From the built database, “Final_project_mental_health”, it is possible to directly query the data into a pandas jupyter notebook using SQL code.
+To load the data into the tables, we used a python package, sqlalchemy, and modules, such as create engine/session.  From the built database, “Final_Project:_Mental_Health”, it is possible to directly query the data into a pandas jupyter notebook using SQL code.
 \
 Datasource Link.
 
@@ -56,7 +58,7 @@ Analysis examined gender, age, country-worked, and company size’s influence on
 \
 **Comfort Discussing Mental Health with a Supervisor**
 \
-Most respondents said they felt comfortable talking about mental health with their supervisors. Across gender, country, age and company size, ‘yes’, ‘no’, and ‘maybe’ responses were the exact same proportions, and almost evenly split into thirds (34% ‘maybe’, 28% ‘no’, and 38% ‘yes’). This demonstrates people, overall, had distributive approaches. The only variable that showed notable differences was country-worked. 56% of respondents who worked in the Netherlands said ‘yes,’ they felt comfortable discussing mental health with a supervisor. Contrarily, only 16% of respondents who worked for companies in Germany felt similarly. Nevertheless, merely 31 respondents worked in the Netherlands and 44 respondents worked in Germany. Since the most respondents came from Britain and the US, these countries’842 respective responses of 40% and 38% ‘yes’ affected the overall results for ‘country-worked.’
+Most respondents said they felt comfortable talking about mental health with their supervisors. Across gender, country, age and company size, ‘yes’, ‘no’, and ‘maybe’ responses were in the exact same proportions, and almost evenly split into thirds (34% ‘maybe’, 28% ‘no’, and 38% ‘yes’). This demonstrates people, overall, had distributive approaches. The only variable that showed notable differences was country-worked. 56% of respondents who worked in the Netherlands said ‘yes,’ they felt comfortable discussing mental health with a supervisor. Contrarily, only 16% of respondents who worked for companies in Germany felt similarly. Nevertheless, merely 31 respondents worked in the Netherlands and 44 respondents worked in Germany. Since the most respondents came from Britain and the US, these countries’ 842 respective responses of 40% and 38% ‘yes’ affected the overall results for ‘country-worked.’
 \
 \
 **Figure A**
@@ -86,7 +88,7 @@ It also appeared respondents did not know if the workplace treated physical heal
 \
 **Awareness of Mental Health Coverage and Employer’s Discussion of Mental Health**
 \
-When asked about awareness of mental health coverage, 412 (41%) of respondents answered, “I am not sure.” Most people did not know about their workplace’s coverage for mental health conditions regardless of gender, age, company size or country-worked. Employers also lacked efforts to spread awareness of available resources. 708 (71%) of respondents said their employers had not discussed mental health options. This perception also did not vary by an set of characteristics. 
+When asked about awareness of mental health coverage, 412 (41%) of respondents answered, “I am not sure.” Most people did not know about their workplace’s coverage for mental health conditions regardless of gender, age, company size or country-worked. Employers also lacked efforts to spread awareness of available resources. 708 (71%) of respondents said their employers had not discussed mental health options. This perception also did not vary by a set of characteristics. 
 \
 \
 **Figure C**
@@ -120,44 +122,47 @@ After data pre-processing, we encoded our data using a label encoder instance. T
 \
 **Random Forest Classifier: Pros and Limitations**
 \
-This analysis employed a Random Forest Classifier because of its versatility. A Random Forest Classifer can be used for both classifications and logistic regression. It also provides higher accuracy through cross validation. Compared to some simple decision trees, which searches for the most important feature while splitting a node, a Random Forest classifier finds the best feature among a random subset of features. The pros and cons of this model are represented below.
+This analysis employed a Random Forest Classifier because of its versatility. A Random Forest Classifier can be used for both classifications and logistic regression. It also provides higher accuracy through cross validation. Compared to some simple decision trees, which searches for the most important feature while splitting a node, a Random Forest Classifier finds the best feature among a random subset of features. The pros and cons of this model are represented below.
 \
 Benefits:
 \
-•	Random forest builds multiple decision trees and merges them together to get a more accurate and stable prediction.
-\
-•	It provides higher accuracy through cross validation. Random forest classifier will handle the missing values and maintain the accuracy of data.
-\
-•	If there are more trees, it will lower the risk of over-fitting trees in the model.
-\
-•	Robust to outliers.
-\
-•	Works well with non-linear data.
-\
-•	Better accuracy than other classification algorithms.(Example: Stochastic Gradient Descent/K-Nearest Neighbors/...)
+1. Random Forest Classifiers build multiple decision trees and merges them together to get a more accurate and stable prediction.
+2. It provides higher accuracy through cross validation.  A Random Forest Classifier will handle the missing values and maintain the accuracy of data.
+3. If there are more trees, it will lower the risk of over-fitting trees in the model.
+4. Robust to outliers.
+5. Works well with non-linear data.
+6. Better accuracy than other classification algorithms. (Example: Stochastic Gradient Descent/K-Nearest Neighbors/...)
+
 \
 Limitations:
 \
-•	The main limitation of random forest is that many trees can make the algorithm too slow and ineffective for real-time predictions.
-•	Since a random forest combines multiple decision trees, it becomes more difficult to interpret.
+1. The main limitation of a Random Forest is that many trees can make the algorithm too slow and ineffective for real-time predictions.
+2. Since a Random Forest combines multiple decision trees, it becomes more difficult to interpret.
+
 \
 \
 **Model Improvements, Changes, Additional Training**
 \
 To improve our classification, we also ran an oversampling model. It adjusted the class distribution of a data set (the ratio between the different classes/categories represented) by randomly duplicating examples from the minority class and adding them to the training dataset. Doing so should help to achieve a better predictions accuracy score.
-\
-To keep improving our model, the next step would be to keep refining our features. For example, we could add some more feature if it boosts the prediction’s accuracy. We stopped using under-sampling as it did not help to improve our model. Under-sampling probably did not work because it drops a lot o information. More information helps the modeling algorithm. 
+To keep improving our model, the next step would be to keep refining our features. For example, we could add some more features if it boosts the prediction’s accuracy. We stopped using under-sampling as it did not help to improve our model. Under-sampling probably did not work because it drops a lot of information. More information helps the modeling algorithm.  
 \
 \
 **Results**
 \
-After using Random Forest Classifier to predict our target based on related features, our accuracy score is 78.6%, with a precision of 79%, a recall(sensitivity) of 79% and a F1 score of 0.79. The high average F1 score tell us that sensitivity and precision are balanced in our model. We can also analyses that our model have better performance while predicting a negative MH diagnostic than a positive one.
-After oversampling our accuracy score and all other parameters are better 83%, which is good and means our model is predicting more than 4 out of 5 times the correct output.
+After using Random Forest Classifier to predict our target based on related features, our accuracy score is 78.6%, with a precision of 79%, a recall(sensitivity) of 79% and a F1 score of 0.79. The high average F1 score tell us that sensitivity and precision are balanced in our model. We can also analyze that our models have better performance while predicting a negative MH diagnostic than a positive one.
+After oversampling, our accuracy score and all other parameters are better than 83%, which is good and means our model is predicting more than 4 out of 5 times the correct output.
 
 # Summary
-Without information, people make decisions based on personal biases, opinions or best guesses. Despite evidence to the contrary, workers believed that if an employer identified them with a mental health condition, then their careers would suffer. This felt more probable for women than men, a possible amplification of women’s minority status in the tech industry. Representing only 1 out every 4 workers, women already face different characterizations than men, because of their poorer remonstrance. While workers had not seen negative consequences for a mental health diagnosis among coworkers, they also did not notice employers spreading awareness of mental health resources or coverage. Omission in discussions prevents normalization of the subject. It could be affecting people’s willingness to be identified as having a mental health condition. Even for this survey, only 420 (41%) of the total respondents were willing to answer if they had a current mental health diagnosis.
+Without accurate information, people make decisions based on personal biases, opinions or best guesses. Despite evidence to the contrary, workers believed that if an employer identified them with a mental health condition, then their careers would suffer. This felt more probable for women than men, a possible amplification of women’s minority status in the tech industry. Representing only 1 out every 4 workers, women already face different characterizations than men, because of their poorer remonstrance. While workers had not seen negative consequences for a mental health diagnosis among coworkers, they also did not notice employers spreading awareness of mental health resources or coverage. Omission in discussions prevents normalization of the subject. This could be affecting people’s willingness to be identified as having a mental health condition. Even for this survey, only 420 (41%) of the total respondents were willing to answer if they had a current mental health diagnosis.
+\
+\
+**Presentation:**
+\
+Please see more of our presentation and summary in Google Slides.
+
 
 # Recommendations for Employers
 1.	Amplify communication about wellness opportunities to prevent stress from becoming a mental health condition. Normalize mental health by openly discussing it during presentations about resources and health coverage.
 2.	Acknowledge and name gender dynamics in the workplace. Women perceive penalization is possible more often than men. More research is needed to understand why, but it starts by naming that men outnumber women dramatically.
-3.	Workplace culture is affected by many factors. Psychological safety affects people’s productivity and retention, which has financial consequences. Do right by people. Do right by your bottom line. Consider a corporate social responsibility department. Incorporate data about employee wellness into a part of how the workplace success is defined. Measure it so there’s accountability. 
+3.	Workplace culture is affected by many factors. Psychological safety affects people’s productivity and retention, which has financial consequences. Do right by people. Do right by your bottom line. Consider a corporate social responsibility department. Incorporate data about employee wellness into a part of how the workplace success is defined. Measure it so there’s accountability.
+
