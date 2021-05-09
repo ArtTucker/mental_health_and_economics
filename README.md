@@ -69,8 +69,6 @@ Despite some inclination to share about their mental health, almost half of all 
 \
 ***Figure B***
 \
-!["gender_and_mh_hurt_on_career"](images/gender_and_mh_hurt_on_career.png)
-\
 !["PerceptionHurtOnCareerByCompanySize.PNG"](images/PerceptionHurtOnCareerByCompanySize.PNG)
 \
 It also appeared respondents did not know if the workplace treated physical health and mental health the same. Just over 40% of men and women said, ‘I don’t know.’ 80 women (31% of female respondents) and 219 men (30% of male respondents) commented, ‘yes.’ Gender did not affect perception in this case. It could be implied that factors, such as uncertainty rather than observation of negative workplace practices, are influencing people and their choices about mental health in the workplace. 
