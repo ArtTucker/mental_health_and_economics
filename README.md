@@ -102,7 +102,6 @@ A supervised learning model helps to predict an output from a previous experienc
 Our target is: "Do you currently have a professional mental health mental health diagnosis?"
 \
 To predict it, we identified insights related to the target:
-\
 1.	Demographics information: Age / Gender / Country where an individual live and works.
 2.	Company information: Size / Work position.
 3.	Current and previous employers' information: Provide MH benefits / Current employer / Previous employer.
