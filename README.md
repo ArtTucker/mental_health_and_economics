@@ -17,8 +17,6 @@ The world is in the middle of a health care crisis. Unfortunately, the Covid 19 
 This data comes from Open Sourcing Mental Illness, a nonprofit dedicated to raising awareness, educating, and providing resources to support mental wellness in the tech and open-source communities. The survey contains 1,434 responses, and measures attitudes towards mental health among tech workers with and without a mental health disorder. The analysis included 1,004 responses after data cleaning.
 \
 Data was filtered or dropped by these criteria:
-
-\
 1.	Dropped rows/respondents by people who work for a company, and are NOT self-employed
 3.	Reduced rows/respondents by people who lived in countries where over 30 people contributed to the survey. 
 4.	Removed columns/answers to survey questions with over 75% NaN
