@@ -73,6 +73,7 @@ Despite some inclination to share about their mental health, almost half of all 
 \
 It also appeared respondents did not know if the workplace treated physical health and mental health the same. Just over 40% of men and women said, ‘I don’t know.’ 80 women (31% of female respondents) and 219 men (30% of male respondents) commented, ‘yes.’ Gender did not affect perception in this case. It could be implied that factors, such as uncertainty rather than observation of negative workplace practices, are influencing people and their choices about mental health in the workplace. 
 \
+\
 **Observation of Negative Consequences for a Coworker Revealing Mental Illness**
 \
 Nevertheless, when asked if they had observed coworkers receiving negative consequences for revealing a mental health condition, almost 90% of both men and women said ‘no.’ 91% of people, regardless of country-worked also said ‘no’. 91% of people from every company size said no. For age, less than 10% of people also said ‘yes’ to seeing consequences. Even though people feared for their careers if they were identified with a mental health condition, they also lacked any observable evidence of others receiving different treatment because of a mental health condition.
