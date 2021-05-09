@@ -32,14 +32,23 @@ Pandas/Python supported this pre-processing of information.
 
 # Database
 To host information and ensure public access across 6 members, Amazon Web services hosts the information. An SQL, relational database creates tables and links them by primary and foreign keys across years. Postgres and pgadmin best suited the project because the survey only contains about a 1000 records. Other benefits included:
+\
 •	Data structure.
+\
 •	Easy access to the network.
+\
 •	Language (SQL).
+\
 •	Speed.
+\
 •	Maintenance.
+\
 •	Ability to be access by more than one person.
+\
 Please see Entity Relational Diagram for details about table structure.
+\
 To load the data into the tables, we used a python package, sqlalchemy, and modules, such as create_engine/session.  From the built database, “Final_project_mental_health”, it is possible to directly query the data into a pandas jupyter notebook using SQL code.
+\
 Datasource Link.
 
 # Results
@@ -49,6 +58,7 @@ Analysis examined gender, age, country-worked, and company size’s influence on
 \
 \
 **Comfort Discussing Mental Health with a Supervisor**
+\
 Most respondents said they felt comfortable talking about mental health with their supervisors. Across gender, country, age and company size, ‘yes’, ‘no’, and ‘maybe’ responses were the exact same proportions, and almost evenly split into thirds (34% ‘maybe’, 28% ‘no’, and 38% ‘yes’). This demonstrates people, overall, had distributive approaches. The only variable that showed notable differences was country-worked. 56% of respondents who worked in the Netherlands said ‘yes,’ they felt comfortable discussing mental health with a supervisor. Contrarily, only 16% of respondents who worked for companies in Germany felt similarly. Nevertheless, merely 31 respondents worked in the Netherlands and 44 respondents worked in Germany. Since the most respondents came from Britain and the US, these countries’842 respective responses of 40% and 38% ‘yes’ affected the overall results for ‘country-worked.’
 \
 \
@@ -114,11 +124,17 @@ This analysis employed a Random Forest Classifier because of its versatility. A 
 Benefits:
 \
 •	Random forest builds multiple decision trees and merges them together to get a more accurate and stable prediction.
+\
 •	It provides higher accuracy through cross validation. Random forest classifier will handle the missing values and maintain the accuracy of data.
+\
 •	If there are more trees, it will lower the risk of over-fitting trees in the model.
+\
 •	Robust to outliers.
+\
 •	Works well with non-linear data.
+\
 •	Better accuracy than other classification algorithms.(Example: Stochastic Gradient Descent/K-Nearest Neighbors/...)
+\
 Limitations:
 •	The main limitation of random forest is that many trees can make the algorithm too slow and ineffective for real-time predictions.
 •	Since a random forest combines multiple decision trees, it becomes more difficult to interpret.
