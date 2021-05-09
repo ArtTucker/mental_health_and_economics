@@ -109,7 +109,7 @@ A supervised learning model helps to predict an output from a previous experienc
 \
 **Target and Features Engineering**
 \
-Our target is: "Do you currently have a professional mental health mental health diagnosis?"
+Our target is: "Do you currently have a professional mental health diagnosis?"
 \
 To predict it, we identified insights related to the target:
 \
