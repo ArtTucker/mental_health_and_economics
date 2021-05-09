@@ -91,7 +91,7 @@ When asked about awareness of mental health coverage, 412 (41%) of respondents a
 \
 **Figure C**
 \
-!["mh_coverage_country.png"](https://github.com/ArtTucker/mental_health_and_economics/blob/main/images/mh_coverage_country.png)
+!["AwarenessMHCoverageByCountry.PNG"](https://github.com/ArtTucker/mental_health_and_economics/blob/Stauffer_Branch/images/AwarenessMHCoverageByCountry.PNG)
  
 # Dashboard
 Please see charts and results in an interactive form on our website here: https://www.mentalhealthintech.com/
