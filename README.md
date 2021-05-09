@@ -32,17 +32,17 @@ Pandas/Python supported this pre-processing of information.
 # Database
 To host information and ensure public access across 6 members, Amazon Web services hosts the information. An SQL relational database creates tables and links them by primary and foreign keys across years. Postgres and pgadmin best suited the project because the survey only contains about a 1000 records. Other benefits included:
 \
-•	Data structure.
+-Data structure.
 \
-•	Easy access to the network.
+-Easy access to the network.
 \
-•	Language (SQL).
+-Language (SQL).
 \
-•	Speed.
+-Speed.
 \
-•	Maintenance.
+-Maintenance.
 \
-•	Ability to be access by more than one person.
+-Ability to be access by more than one person.
 \
 Please see Entity Relational Diagram for details about table structure.
 \
@@ -109,10 +109,14 @@ A supervised learning model helps to predict an output from a previous experienc
 Our target is: "Do you currently have a professional mental health mental health diagnosis?"
 \
 To predict it, we identified insights related to the target:
-1.	Demographics information: Age / Gender / Country where an individual live and works.
-2.	Company information: Size / Work position.
-3.	Current and previous employers' information: Provide MH benefits / Current employer / Previous employer.
-4.	Information about mental health disorder: Have been previously diagnosed with MH disorder / Able to take a leave if diagnosed with MH disorder / MH disorder from family history / Have been seeking help from MH professional.
+\
+-Demographics information: Age / Gender / Country where an individual live and works.
+\
+-Company information: Size / Work position.
+\
+-Current and previous employers' information: Provide MH benefits / Current employer / Previous employer.
+\
+-Information about mental health disorder: Have been previously diagnosed with MH disorder / Able to take a leave if diagnosed with MH disorder / MH disorder from family history / Have been seeking help from MH professional.
 \
 \
 **Test and Train Set Up**
@@ -126,19 +130,22 @@ This analysis employed a Random Forest Classifier because of its versatility. A 
 \
 Benefits:
 \
-1. Random Forest Classifiers build multiple decision trees and merges them together to get a more accurate and stable prediction.
-2. It provides higher accuracy through cross validation.  A Random Forest Classifier will handle the missing values and maintain the accuracy of data.
-3. If there are more trees, it will lower the risk of over-fitting trees in the model.
-4. Robust to outliers.
-5. Works well with non-linear data.
-6. Better accuracy than other classification algorithms. (Example: Stochastic Gradient Descent/K-Nearest Neighbors/...)
-
+-Random Forest Classifiers build multiple decision trees and merges them together to get a more accurate and stable prediction.
+-It provides higher accuracy through cross validation.  A Random Forest Classifier will handle the missing values and maintain the accuracy of data.
+\
+-If there are more trees, it will lower the risk of over-fitting trees in the model.
+\
+-Robust to outliers.
+\
+-Works well with non-linear data.
+\
+-Better accuracy than other classification algorithms. (Example: Stochastic Gradient Descent/K-Nearest Neighbors/...)
 \
 Limitations:
 \
-1. The main limitation of a Random Forest is that many trees can make the algorithm too slow and ineffective for real-time predictions.
-2. Since a Random Forest combines multiple decision trees, it becomes more difficult to interpret.
-
+-The main limitation of a Random Forest is that many trees can make the algorithm too slow and ineffective for real-time predictions.
+\
+-Since a Random Forest combines multiple decision trees, it becomes more difficult to interpret.
 \
 \
 **Model Improvements, Changes, Additional Training**
