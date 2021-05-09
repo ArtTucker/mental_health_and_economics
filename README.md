@@ -87,6 +87,11 @@ It also appeared respondents did not know if the workplace treated physical heal
 **Awareness of Mental Health Coverage and Employer’s Discussion of Mental Health**
 \
 When asked about awareness of mental health coverage, 412 (41%) of respondents answered, “I am not sure.” Most people did not know about their workplace’s coverage for mental health conditions regardless of gender, age, company size or country-worked. Employers also lacked efforts to spread awareness of available resources. 708 (71%) of respondents said their employers had not discussed mental health options. This perception also did not vary by an set of characteristics. 
+\
+\
+**Figure C**
+\
+!["mh_coverage_country.png"](https://github.com/ArtTucker/mental_health_and_economics/blob/main/images/mh_coverage_country.png)
  
 # Dashboard
 Please see charts and results in an interactive form on our website here: https://www.mentalhealthintech.com/
