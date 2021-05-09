@@ -122,6 +122,7 @@ After data pre-processing, we encoded our data using a label encoder instance. T
 \
 This analysis employed a Random Forest Classifier because of its versatility. A Random Forest Classifier can be used for both classifications and logistic regression. It also provides higher accuracy through cross validation. Compared to some simple decision trees, which searches for the most important feature while splitting a node, a Random Forest Classifier finds the best feature among a random subset of features. The pros and cons of this model are represented below.
 \
+\
 *Benefits:*
 - Random Forest Classifiers build multiple decision trees and merges them together to get a more accurate and stable prediction.
 - It provides higher accuracy through cross validation.  A Random Forest Classifier will handle the missing values and maintain the accuracy of data.
@@ -133,6 +134,7 @@ This analysis employed a Random Forest Classifier because of its versatility. A 
 *Limitations:*
 - The main limitation of a Random Forest is that many trees can make the algorithm too slow and ineffective for real-time predictions.
 - Since a Random Forest combines multiple decision trees, it becomes more difficult to interpret.
+\
 \
 **Model Improvements, Changes, Additional Training**
 \
