@@ -94,7 +94,7 @@ When asked about awareness of mental health coverage, 412 (41%) of respondents a
 # Dashboard
 Please see charts and results in an interactive form on our website here: https://www.mentalhealthintech.com/
 
-# Machine learning model:
+# Machine Learning Model:
 **Model Type and Goal**
 \
 A supervised learning model helps to predict an output from a previous experience. It works by training data and learning from a link between an input and output. Our goal was to classify if an individual is currently diagnosed with a Mental Health disorder among all respondents.
@@ -141,7 +141,7 @@ Limitations:
 •	Since a random forest combines multiple decision trees, it becomes more difficult to interpret.
 \
 \
-**Model improvements, changes, additional training**
+**Model Improvements, Changes, Additional Training**
 \
 To improve our classification, we also ran an oversampling model. It adjusted the class distribution of a data set (the ratio between the different classes/categories represented) by randomly duplicating examples from the minority class and adding them to the training dataset. Doing so should help to achieve a better predictions accuracy score.
 \
