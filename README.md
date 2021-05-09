@@ -17,6 +17,7 @@ The world is in the middle of a health care crisis. Unfortunately, the Covid 19 
 This data comes from Open Sourcing Mental Illness, a nonprofit dedicated to raising awareness, educating, and providing resources to support mental wellness in the tech and open-source communities. The survey contains 1,434 responses, and measures attitudes towards mental health among tech workers with and without a mental health disorder. The analysis included 1,004 responses after data cleaning.
 \
 Data was filtered or dropped by these criteria:
+
 \
 1.	Dropped rows/respondents by people who work for a company, and are NOT self-employed
 3.	Reduced rows/respondents by people who lived in countries where over 30 people contributed to the survey. 
@@ -107,9 +108,9 @@ Our target is: "Do you currently have a professional mental health mental health
 To predict it, we identified insights related to the target:
 \
 1.	Demographics information: Age / Gender / Country where an individual live and works.
-3.	Company information: Size / Work position.
-4.	Current and previous employers' information: Provide MH benefits / Current employer / Previous employer.
-5.	Information about mental health disorder: Have been previously diagnosed with MH disorder / Able to take a leave if diagnosed with MH disorder / MH disorder from family history / Have been seeking help from MH professional.
+2.	Company information: Size / Work position.
+3.	Current and previous employers' information: Provide MH benefits / Current employer / Previous employer.
+4.	Information about mental health disorder: Have been previously diagnosed with MH disorder / Able to take a leave if diagnosed with MH disorder / MH disorder from family history / Have been seeking help from MH professional.
 \
 \
 **Test and Train Set Up**
