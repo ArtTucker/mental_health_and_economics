@@ -32,26 +32,20 @@ Pandas/Python supported this pre-processing of information.
 # Database
 To host information and ensure public access across 6 members, Amazon Web services hosts the information. An SQL relational database creates tables and links them by primary and foreign keys across years. Postgres and pgadmin best suited the project because the survey only contains about a 1000 records. Other benefits included:
 \
--Data structure.
+- Data structure.
+- Easy access to the network.
+- Language (SQL).
+- Speed.
+- Maintenance.
+- Ability to be access by more than one person.
 \
--Easy access to the network.
-\
--Language (SQL).
-\
--Speed.
-\
--Maintenance.
-\
--Ability to be access by more than one person.
-\
-\
-Please [visit]() Entity Relational Diagram for details about table structure.
+Please [visit](database/Database_ERD2.png) Entity Relational Diagram for details about table structure.
 \
 \
 To load the data into the tables, we used a python package, sqlalchemy, and modules, such as create engine/session.  From the built database, “Final_Project:_Mental_Health”, it is possible to directly query the data into a pandas jupyter notebook using SQL code.
 \
 \
-Datasource [Link.](https://github.com/ArtTucker/mental_health_and_economics/blob/main/database/filestoload/2016_surveydata.csv)<br>
+Datasource [Link.](database/filestoload/2016_surveydata.csv)<br>
 
 # Results
 **Characteristics of Respondents**
@@ -65,7 +59,7 @@ Most respondents said they felt comfortable talking about mental health with the
 \
 \
 **Figure A**
-!["WillingnessMHDiscussionSupervisorByGender.PNG"](https://github.com/ArtTucker/mental_health_and_economics/blob/Stauffer_Branch/images/WillingnessMHDiscussionSupervisorByGender.PNG)
+!["WillingnessMHDiscussionSupervisorByGender.PNG"](images/WillingnessMHDiscussionSupervisorByGender.PNG)
 \
 \
 **Perception that Identification of Having a Mental Illness Would Hurt a Career**
@@ -77,7 +71,7 @@ Despite some inclination to share about their mental health, almost half of all 
 \
 !["gender_and_mh_hurt_on_career"](images/gender_and_mh_hurt_on_career.png)
 \
-!["PerceptionHurtOnCareerByCompanySize.PNG"](https://github.com/ArtTucker/mental_health_and_economics/blob/Stauffer_Branch/images/PerceptionHurtOnCareerByCompanySize.PNG)
+!["PerceptionHurtOnCareerByCompanySize.PNG"](images/PerceptionHurtOnCareerByCompanySize.PNG)
 \
 It also appeared respondents did not know if the workplace treated physical health and mental health the same. Just over 40% of men and women said, ‘I don’t know.’ 80 women (31% of female respondents) and 219 men (30% of male respondents) commented, ‘yes.’ Gender did not affect perception in this case. It could be implied that factors, such as uncertainty rather than observation of negative workplace practices, are influencing people and their choices about mental health in the workplace. 
 \
@@ -98,7 +92,7 @@ When asked about awareness of mental health coverage, 412 (41%) of respondents a
 \
 **Figure C**
 \
-!["AwarenessMHCoverageByCountry.PNG"](https://github.com/ArtTucker/mental_health_and_economics/blob/Stauffer_Branch/images/AwarenessMHCoverageByCountry.PNG)
+!["AwarenessMHCoverageByCountry.PNG"](images/AwarenessMHCoverageByCountry.PNG)
  
 # Dashboard
 Please see charts and results in an interactive form on our website here: https://www.mentalhealthintech.com/
@@ -114,15 +108,10 @@ A supervised learning model helps to predict an output from a previous experienc
 Our target is: "Do you currently have a professional mental health diagnosis?"
 \
 To predict it, we identified insights related to the target:
-\
--Demographics information: Age / Gender / Country where an individual live and works.
-\
--Company information: Size / Work position.
-\
--Current and previous employers' information: Provide MH benefits / Current employer / Previous employer.
-\
--Information about mental health disorder: Have been previously diagnosed with MH disorder / Able to take a leave if diagnosed with MH disorder / MH disorder from family history / Have been seeking help from MH professional.
-\
+- Demographics information: Age / Gender / Country where an individual live and works.
+- Company information: Size / Work position.
+- Current and previous employers' information: Provide MH benefits / Current employer / Previous employer.
+- Information about mental health disorder: Have been previously diagnosed with MH disorder / Able to take a leave if diagnosed with MH disorder / MH disorder from family history / Have been seeking help from MH professional.
 \
 **Test and Train Set Up**
 \
@@ -134,24 +123,16 @@ After data pre-processing, we encoded our data using a label encoder instance. T
 This analysis employed a Random Forest Classifier because of its versatility. A Random Forest Classifier can be used for both classifications and logistic regression. It also provides higher accuracy through cross validation. Compared to some simple decision trees, which searches for the most important feature while splitting a node, a Random Forest Classifier finds the best feature among a random subset of features. The pros and cons of this model are represented below.
 \
 *Benefits:*
-\
--Random Forest Classifiers build multiple decision trees and merges them together to get a more accurate and stable prediction.
--It provides higher accuracy through cross validation.  A Random Forest Classifier will handle the missing values and maintain the accuracy of data.
-\
--If there are more trees, it will lower the risk of over-fitting trees in the model.
-\
--Robust to outliers.
-\
--Works well with non-linear data.
-\
--Better accuracy than other classification algorithms. (Example: Stochastic Gradient Descent/K-Nearest Neighbors/...)
+- Random Forest Classifiers build multiple decision trees and merges them together to get a more accurate and stable prediction.
+- It provides higher accuracy through cross validation.  A Random Forest Classifier will handle the missing values and maintain the accuracy of data.
+- If there are more trees, it will lower the risk of over-fitting trees in the model.
+- Robust to outliers.
+- Works well with non-linear data.
+- Better accuracy than other classification algorithms. (Example: Stochastic Gradient Descent/K-Nearest Neighbors/...)
 \
 *Limitations:*
-\
--The main limitation of a Random Forest is that many trees can make the algorithm too slow and ineffective for real-time predictions.
-\
--Since a Random Forest combines multiple decision trees, it becomes more difficult to interpret.
-\
+- The main limitation of a Random Forest is that many trees can make the algorithm too slow and ineffective for real-time predictions.
+- Since a Random Forest combines multiple decision trees, it becomes more difficult to interpret.
 \
 **Model Improvements, Changes, Additional Training**
 \
