@@ -136,17 +136,20 @@ Benefits:
 •	Better accuracy than other classification algorithms.(Example: Stochastic Gradient Descent/K-Nearest Neighbors/...)
 \
 Limitations:
+\
 •	The main limitation of random forest is that many trees can make the algorithm too slow and ineffective for real-time predictions.
 •	Since a random forest combines multiple decision trees, it becomes more difficult to interpret.
 \
 \
 **Model improvements, changes, additional training**
+\
 To improve our classification, we also ran an oversampling model. It adjusted the class distribution of a data set (the ratio between the different classes/categories represented) by randomly duplicating examples from the minority class and adding them to the training dataset. Doing so should help to achieve a better predictions accuracy score.
 \
 To keep improving our model, the next step would be to keep refining our features. For example, we could add some more feature if it boosts the prediction’s accuracy. We stopped using under-sampling as it did not help to improve our model. Under-sampling probably did not work because it drops a lot o information. More information helps the modeling algorithm. 
 \
 \
 **Results**
+\
 After using Random Forest Classifier to predict our target based on related features, our accuracy score is 78.6%, with a precision of 79%, a recall(sensitivity) of 79% and a F1 score of 0.79. The high average F1 score tell us that sensitivity and precision are balanced in our model. We can also analyses that our model have better performance while predicting a negative MH diagnostic than a positive one.
 After oversampling our accuracy score and all other parameters are better 83%, which is good and means our model is predicting more than 4 out of 5 times the correct output.
 
