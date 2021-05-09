@@ -51,7 +51,7 @@ Please [visit]() Entity Relational Diagram for details about table structure.
 To load the data into the tables, we used a python package, sqlalchemy, and modules, such as create engine/session.  From the built database, “Final_Project:_Mental_Health”, it is possible to directly query the data into a pandas jupyter notebook using SQL code.
 \
 \
-Datasource Link.
+Datasource [Link.](https://github.com/ArtTucker/mental_health_and_economics/blob/main/database/filestoload/2016_surveydata.csv)<br>
 
 # Results
 **Characteristics of Respondents**
