@@ -71,7 +71,7 @@ Despite some inclination to share about their mental health, almost half of all 
 \
 **Figure B**
 \
-!["HurtOnCareerByCompanySize.PNG"](https://github.com/ArtTucker/mental_health_and_economics/blob/Stauffer_Branch/images/HurtOnCareerByCompanySize.PNG)
+!["PerceptionHurtOnCareerByCompanySize.PNG"](https://github.com/ArtTucker/mental_health_and_economics/blob/Stauffer_Branch/images/PerceptionHurtOnCareerByCompanySize.PNG)
 \
 \
 **Observation of Negative Consequences for a Coworker Revealing Mental Illness**
