@@ -1,4 +1,3 @@
-
 # Project Overview
 Mental illness affects 1 out of every 5 adults. It costs the US about $1 trillion in lost annual productivity. Despite how common this condition is, people often avoid seeking support. This analysis examines the technology industry, a market worth $1.6 trillion to ask: what factors can contribute to creating an employee workplace that feels comfortable and receptive to mental health support?
  
@@ -6,6 +5,7 @@ Mental illness affects 1 out of every 5 adults. It costs the US about $1 trillio
 The world is in the middle of a health care crisis. Unfortunately, the Covid 19 pandemic represents only part of a larger story. Anxiety and depression are also on the rise. People cannot find the help that they need to address these mental health conditions. According to an American Psychological Association poll of nearly 1,800 psychologists, 74 percent said more patients were seeking treatment for anxiety disorders than before the pandemic. Nearly 30 percent of providers reported seeing more patients overall (New York Times, 2021). Research that identifies the need for employers to step up to meet this crisis will affect policy and lives. This study is important for showing how and what we communicate regarding mental health services to staff can influence the maintenance and/ or improvement of business operations.
 
 ### Team Members: 
+
 - Art Tucker : [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/tucker_a_branch_01) 
 - Preeti Suryakumar : [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/preeti-01)
 - Radhika Tippana : [branch](https://github.com/ArtTucker/mental_health_and_economics/tree/rtippana_segment_2)
@@ -73,11 +73,13 @@ Most respondents said they felt comfortable talking about mental health with the
 Despite some inclination to share about their mental health, almost half of all respondents believed that being identified as having a mental health diagnosis would hurt their career. Women feared retribution more than men in this scenario. 134 (52%) of women believed a mental health diagnosis either had or would hurt their career. Comparatively, 313 (43%) of men believed a mental health diagnosis either had or would hurt their career. Canadian workers also felt the most concerned in comparison to workers of other countries. 62% of the 60 workers of Canadian companies said they thought being identified with a mental illness had or would affect their career. On the other hand, only 11 respondents from the Netherland companies thought this. Size of company also made a small difference. Half of respondents from companies with more than 1000 workers thought being identified with a mental illness would hurt their careers. Conversely, only 44% of respondents thought this was true for a company of 100-500 people. Identification with a mental illness showed some of the greatest variances among subgroups’ (e.g. men vs women) responses even while the overarching categories (gender vs age) showed similarities in answers.
 
 \
+***Figure B***
 \
-**Figure B**
+!["gender_and_mh_hurt_on_career"](images/gender_and_mh_hurt_on_career.png)
 \
 !["PerceptionHurtOnCareerByCompanySize.PNG"](https://github.com/ArtTucker/mental_health_and_economics/blob/Stauffer_Branch/images/PerceptionHurtOnCareerByCompanySize.PNG)
 \
+It also appeared respondents did not know if the workplace treated physical health and mental health the same. Just over 40% of men and women said, ‘I don’t know.’ 80 women (31% of female respondents) and 219 men (30% of male respondents) commented, ‘yes.’ Gender did not affect perception in this case. It could be implied that factors, such as uncertainty rather than observation of negative workplace practices, are influencing people and their choices about mental health in the workplace. 
 \
 **Observation of Negative Consequences for a Coworker Revealing Mental Illness**
 \
@@ -162,6 +164,7 @@ To keep improving our model, the next step would be to keep refining our feature
 After using Random Forest Classifier to predict our target based on related features, our accuracy score is 78.6%, with a precision of 79%, a recall(sensitivity) of 79% and a F1 score of 0.79. The high average F1 score tell us that sensitivity and precision are balanced in our model. We can also analyze that our models have better performance while predicting a negative MH diagnostic than a positive one.
 After oversampling, our accuracy score and all other parameters are better than 83%, which is good and means our model is predicting more than 4 out of 5 times the correct output.
 
+
 # Summary
 Without accurate information, people make decisions based on personal biases, opinions or best guesses. Despite evidence to the contrary, workers believed that if an employer identified them with a mental health condition, then their careers would suffer. This felt more probable for women than men, a possible amplification of women’s minority status in the tech industry. Representing only 1 out every 4 workers, women already face different characterizations than men, because of their poorer remonstrance. While workers had not seen negative consequences for a mental health diagnosis among coworkers, they also did not notice employers spreading awareness of mental health resources or coverage. Omission in discussions prevents normalization of the subject. This could be affecting people’s willingness to be identified as having a mental health condition. Even for this survey, only 420 (41%) of the total respondents were willing to answer if they had a current mental health diagnosis.
 \
@@ -175,4 +178,3 @@ Please see more of our presentation and summary in [Google Slides](https://docs.
 1.	Amplify communication about wellness opportunities to prevent stress from becoming a mental health condition. Normalize mental health by openly discussing it during presentations about resources and health coverage.
 2.	Acknowledge and name gender dynamics in the workplace. Women perceive penalization is possible more often than men. More research is needed to understand why, but it starts by naming that men outnumber women dramatically.
 3.	Workplace culture is affected by many factors. Psychological safety affects people’s productivity and retention, which has financial consequences. Do right by people. Do right by your bottom line. Consider a corporate social responsibility department. Incorporate data about employee wellness into a part of how the workplace success is defined. Measure it so there’s accountability.
-
