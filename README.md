@@ -60,7 +60,7 @@ Most respondents said they felt comfortable talking about mental health with the
 \
 \
 **Figure A**
-!["gender_and_mh_discus_supv"](https://github.com/ArtTucker/mental_health_and_economics/blob/main/images/gender_and_mh_discus_supv.png)
+!["mh_supervisor_gender.png"](https://github.com/ArtTucker/mental_health_and_economics/blob/main/images/mh_supervisor_gender.png)
 \
 \
 **Perception that Identification of Having a Mental Illness Would Hurt a Career**
