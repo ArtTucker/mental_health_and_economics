@@ -151,6 +151,56 @@ To keep improving our model, the next step would be to keep refining our feature
 After using Random Forest Classifier to predict our target based on related features, our accuracy score is 78.6%, with a precision of 79%, a recall(sensitivity) of 79% and a F1 score of 0.79. The high average F1 score tell us that sensitivity and precision are balanced in our model. We can also analyze that our models have better performance while predicting a negative MH diagnostic than a positive one.
 After oversampling, our accuracy score and all other parameters are better than 83%, which is good and means our model is predicting more than 4 out of 5 times the correct output.
 
+## **Model Type and Goal**
+\
+Using Supervised learning , we also attempt using Logistic Regression as a model to predict seeking treatment as a target. It works by training data and learning from a link between an input and output. 
+\
+\
+**Target and Features Engineering**
+\
+Our target is: "Have you ever sought treatment for a mental health issue from a mental health professional?"
+\
+To predict it, we identified insights related to the target:
+- Demographics information: Age / Gender / Country where an individual lives.
+- Company information: Size 
+- Current employers' information: Employer provided health benefit/ awarenes of MH coverage benefits/MH resources provided/ Anonimity maintained if you have a MH     condition
+- Information about mental health disorder: Have been diagnosed with a MH disorder by a professional/ Do you currently have a diagnosis /Will there be a negative impact with discussing yor MH condition/ can you discuss your condition with coworkers or direct supervisors or employer/ Have you observed consequences if you discuss your condition with coworkers/ is mental health condition perceived like a physical health condition/
+\
+**Test and Train Set Up**
+\
+After data pre-processing, we encoded our data using a label encoder instance. This changed text values into numbers, which is required for a machine learning algorithm to work. Next, the data was split: 25% into a ‘testing’ set and 75% into ‘train’ set. For classification, it is important that the ‘train’ and ‘test’ sets have approximately the same percentage of samples of each target class as the complete set. Stratification ensured this occurred. The decision to put more data in ‘train’ than ‘test’ facilitated better accuracy. Accuracy increases when the ‘train’ set contains more data than the ‘test set’, because the score calculates on the ‘test’ set. 
+\
+\
+**Random Forest Classifier: Pros and Limitations**
+\
+This analysis employed a Logistic Regression along with Random Forest Classfier.  The pros and cons of this model are highlighted below.
+\
+*Benefits:*
+- Probability Prediction
+  Compared to some other machine learning algorithms, Logistic Regression will provide probability predictions and not only classification labels (think kNN).
+- Thrives with Little Training
+  One of the great advantages of Logistic Regression is that when you have a complicated linear problem and not a whole lot of data it's still able to produce pretty useful predictions. This is a pro that comes with Logistic Regression's mathematical foundations and won't be possible with most other Machine Learning models.
+- Efficient Computation
+  Logistic Regression is not a resource hungry model (unlike many others, think NNs, SVM, kNN) and this makes it suitable for some simple applications.
+- Unlikely to Overfit
+  Logistic Regression won't overfit easily as it's a linear model. Especially with the C regularization parameter in scikitlearn you can easily take control of any overfitting anxiety you might have.
+- Good accuracy for many simple data sets and it performs well when the dataset is linearly separable.
+
+*Limitations:*
+- Limited Use Case
+ Logistic Regression is strictly a classification method and it has lots of competition(SVMs, Naive Bayes, Random Forests, kNN) which have better application with complex data
+- Linear Decision Boundary
+ Logistic Regression inherently runs on a linear model. This means even more restriction when it comes to implementing logistic regression especially if your data has multiple non-linear aspects (e.g Yes,No,Maybe in our dataset)
+- Can't Handle Missing Data
+ Logistic Regression is not immune to missing data unlike some other machine learning models such as decision trees and random forests which are based on trees.
+\
+\
+**Results**
+\
+After using Logistic Regression to predict our target based on related features, our accuracy score is 876.9%, with a precision of 97%, a recall(sensitivity) of 81% and a F1 score of 0.88. The high average F1 score tell us that sensitivity and precision are balanced in our model. We can state that our models has a good (almost too good) performance while predicting " someone will seek professional help", based on our factors.
+After attempts with different inputs our accuracy score and all other parameters are better than 80%, which is good and means our model is predicting well that people will seek professional help to manage their mental health condition.With our limited data of 1004 responses to the survey, we can say using logistic regression, we can predict that a professional will seek professional help with the above stated input variables. We could potentially use this model for promoting safe practices around mental health conditions to decrease the stigma allowing professionals to comfortable talk to their peers , direct supervisors and seek professional help.
+\
+
 
 # Summary
 Without accurate information, people make decisions based on personal biases, opinions or best guesses. Despite evidence to the contrary, workers believed that if an employer identified them with a mental health condition, then their careers would suffer. This felt more probable for women than men, a possible amplification of women’s minority status in the tech industry. Representing only 1 out every 4 workers, women already face different characterizations than men, because of their poorer remonstrance. While workers had not seen negative consequences for a mental health diagnosis among coworkers, they also did not notice employers spreading awareness of mental health resources or coverage. Omission in discussions prevents normalization of the subject. This could be affecting people’s willingness to be identified as having a mental health condition. Even for this survey, only 420 (41%) of the total respondents were willing to answer if they had a current mental health diagnosis.
