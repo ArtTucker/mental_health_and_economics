@@ -171,7 +171,7 @@ To predict it, we identified insights related to the target:
 After data pre-processing, we encoded our data using a label encoder instance. This changed text values into numbers, which is required for a machine learning algorithm to work. Next, the data was split: 25% into a ‘testing’ set and 75% into ‘train’ set. For classification, it is important that the ‘train’ and ‘test’ sets have approximately the same percentage of samples of each target class as the complete set. Stratification ensured this occurred. The decision to put more data in ‘train’ than ‘test’ facilitated better accuracy. Accuracy increases when the ‘train’ set contains more data than the ‘test set’, because the score calculates on the ‘test’ set. 
 \
 \
-**Random Forest Classifier: Pros and Limitations**
+**Logistic Regression: Pros and Limitations**
 \
 This analysis employed a Logistic Regression along with Random Forest Classfier.  The pros and cons of this model are highlighted below.
 \
