@@ -96,7 +96,7 @@ When asked about awareness of mental health coverage, 412 (41%) of respondents a
 # Dashboard
 Please see charts and results in an interactive form on our website here: https://www.mentalhealthintech.com/
 
-Click here](https://public.tableau.com/profile/radhika3898#!/vizhome/MentalHealthinTechIndustry_16206129261670/CountryMap "Link to Dashboard")
+[Click here](https://public.tableau.com/profile/radhika3898#!/vizhome/MentalHealthinTechIndustry_16206129261670/CountryMap "Link to Dashboard")
 to see the interactive dashbaord in Tableau 
 
 
