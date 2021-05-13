@@ -208,7 +208,7 @@ Without accurate information, people make decisions based on personal biases, op
 \
 **Presentation:**
 \
-Please see more of our presentation and summary in [Google Slides](https://docs.google.com/presentation/d/1MGCToYm2dP9P64Vqa-BV66mx2AwQhjazQaETZNNopPo/edit?usp=sharing)
+Please see more of our presentation and summary in [Google Slides](https://docs.google.com/presentation/d/1iEX-tB4FmF3ejDuOh4KidA_q4rcydwp1zIhURZYgVaY/edit?usp=sharing)
 
 
 # Recommendations for Employers
