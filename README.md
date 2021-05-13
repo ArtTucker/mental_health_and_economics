@@ -55,6 +55,13 @@ Analysis examined gender, age, country-worked, and company size’s influence on
 \
 **Comfort Discussing Mental Health with a Supervisor**
 \
+
+***Willingness to discuss mental health issues with coworkers, by age.***
+![Willingness to discuss mental health issues with coworkers, by age](images/mh_discus_cowork_impact.png)
+
+to view additional analysis visualizations created so far, please visit our [images folder](https://github.com/ArtTucker/mental_health_and_economics/tree/main/images).
+
+
 Most respondents said they felt comfortable talking about mental health with their supervisors. Across gender, country, age and company size, ‘yes’, ‘no’, and ‘maybe’ responses were in the exact same proportions, and almost evenly split into thirds (34% ‘maybe’, 28% ‘no’, and 38% ‘yes’). This demonstrates people, overall, had distributive approaches. The only variable that showed notable differences was country-worked. 56% of respondents who worked in the Netherlands said ‘yes,’ they felt comfortable discussing mental health with a supervisor. Contrarily, only 16% of respondents who worked for companies in Germany felt similarly. Nevertheless, merely 31 respondents worked in the Netherlands and 44 respondents worked in Germany. Since the most respondents came from Britain and the US, these countries’ 842 respective responses of 40% and 38% ‘yes’ affected the overall results for ‘country-worked.’
 \
 \
@@ -65,6 +72,7 @@ Most respondents said they felt comfortable talking about mental health with the
 **Perception that Identification of Having a Mental Illness Would Hurt a Career**
 \
 Despite some inclination to share about their mental health, almost half of all respondents believed that being identified as having a mental health diagnosis would hurt their career. Women feared retribution more than men in this scenario. 134 (52%) of women believed a mental health diagnosis either had or would hurt their career. Comparatively, 313 (43%) of men believed a mental health diagnosis either had or would hurt their career. Canadian workers also felt the most concerned in comparison to workers of other countries. 62% of the 60 workers in Canadian companies said they thought being identified with a mental illness had or would affect their career. On the other hand, only 11 respondents from the Netherland companies thought this. Size of company also made a small difference. Half of respondents from companies with more than 1000 workers thought being identified with a mental illness would hurt their careers. Conversely, only 44% of respondents thought this was true for a company of 100-500 people. Identification with a mental illness showed some of the greatest variances among subgroups’ (e.g. men vs women) responses even while the overarching categories (gender vs age) showed similarities in answers.
+
 
 \
 ***Figure B***
@@ -100,56 +108,86 @@ Please see charts and results in an interactive form on our website here: https:
 to see the interactive dashboard in Tableau.
 
 
+
+
 # Machine Learning Model:
+
 **Model Type and Goal**
-\
-A supervised learning model helps to predict an output from a previous experience. It works by training data and learning from a link between an input and output. Our goal was to classify if an individual is currently diagnosed with a Mental Health disorder among all respondents.
-\
-\
-**Target and Features Engineering**
-\
-Our target is: "Do you currently have a professional mental health diagnosis?"
-\
-To predict it, we identified insights related to the target:
-- Demographics information: Age / Gender / Country where an individual live and works.
-- Company information: Size / Work position.
-- Current and previous employers' information: Provide MH benefits / Current employer / Previous employer.
-- Information about mental health disorder: Have been previously diagnosed with MH disorder / Able to take a leave if diagnosed with MH disorder / MH disorder from family history / Have been seeking help from MH professional.
-\
-\
-**Test and Train Set Up**
-\
-After data pre-processing, we encoded our data using a label encoder instance. This changed text values into numbers, which is required for a machine learning algorithm to work. Next, the data was split: 25% into a ‘testing’ set and 75% into ‘train’ set. For classification, it is important that the ‘train’ and ‘test’ sets have approximately the same percentage of samples of each target class as the complete set. Stratification ensured this occurred. The decision to put more data in ‘train’ than ‘test’ facilitated better accuracy. Accuracy increases when the ‘train’ set contains more data than the ‘test set’, because the score calculates on the ‘test’ set. 
-\
-\
-**Random Forest Classifier: Pros and Limitations**
-\
-This analysis employed a Random Forest Classifier because of its versatility. A Random Forest Classifier can be used for both classifications and logistic regression. It also provides higher accuracy through cross validation. Compared to some simple decision trees, which searches for the most important feature while splitting a node, a Random Forest Classifier finds the best feature among a random subset of features. The pros and cons of this model are represented below.
-\
-\
+Our intention is to predict an output from a previous experience, to achieve it, we will use a supervised machine learning model.<br>
+This kind of model allow us to use training data to learn a link between the input, and the output. Compared to unsupervised learning, it is a more accurate and trustworthy method.<br>
+[Code-link]()<br>
+- Datasource [Link.](https://github.com/ArtTucker/mental_health_and_economics/blob/main/database/filestoload/2016_surveydata.csv)<br>
+  
+- Goal:<br>
+
+Our goal is to be able to classifies in an accurate manner if an individual is currently diagnosed with a Mental Health disorder according to each individual answers present in the dataset . 
+Interest here is to focus on individuals who work in a tech-company.<br>
+After training and testing our data, and if we add more answers, we will be able to predict an individual Mental Health disorder even if these entries are missing on the new data. 
+  
+- Data preprocessing:<br>
+
+
+For cleaning and preprocessing step, see Data Source/ Pre-Processing module.>br>
+Visualizations of cleaning step have been created for better understanding of our features.<br>
+Once we got all desired features cleaned up for our model, we encoded our data using a LabelEncoder from scikit-learn library. This step allows us to change categorical features into unique number identifier. LabelEncoder encode features with a value between 0 and n classes, where n is the number of distinct features. If a feature repeats it assigns the same value as assigned earlier.<br>
+Using LabelEncoder instead of a pandas get_dummies function for example creates a function which persists and can be applied to new datasets which use the same categorical variables, with consistent results.<br>
+Once encoded our dataset is ready to be used with a machine learning algorithm.<br>
+
+
+- Target and Features Engineering:<br>
+
+Our target is: "Do you currently have a mental health disorder?"<br> 
+  
+To predict it, we decided to use insights related to the target:<br>
+** Demographics information: Age / Gender / Country where an individual live and works.<br>
+** Company information: Size / Work position.<br>
+** Current and previous employers' information: Provide MH benefits / Current employer / Previous employer.<br>
+** Information about mental health disorder: Have been previously diagnosed with MH disorder / Able to take a leave if diagnosed with MH disorder / MH disorder from family history / Have been seeking help from  MH professional.<br>
+
+- Test and Train Set Up:<br>
+
+We decide to split our entry data into 75% for training set and 25% testing set, because any train-test split which has more data in the training set will most likely give you better accuracy as calculated on that test set. like that the training dataset for the model can learn and effectively map input to output. 
+When splitting the dataset, we stratify it so that each split is similar. In a classification setting, it is often chosen to ensure that the train and test sets have approximately the same percentage of samples of each target class as the complete set.
+
+
+- Random Forest Classifier: Pros and Limitations:<br>
+
+This analysis employed a Random Forest Classifier because of his versatility, it can be used for both classifications and regression task. It also provides higher accuracy through cross validation. Compared to simple decisions trees, instead of searching for the most important feature while splitting a node, it searches for the best feature among a random subset of features.
+We will use it for his diagnostics classification abilities.<br>
+
 *Benefits:*
-- Random Forest Classifiers build multiple decision trees and merges them together to get a more accurate and stable prediction.
-- It provides higher accuracy through cross validation.  A Random Forest Classifier will handle the missing values and maintain the accuracy of data.
+- Random forest builds multiple decision trees and merges them together to get a more accurate and stable prediction.
+- It provides higher accuracy through cross validation. Random forest classifier will handle the missing values and maintain the accuracy of data.
 - If there are more trees, it will lower the risk of over-fitting trees in the model.
 - Robust to outliers.
 - Works well with non-linear data.
-- Better accuracy than other classification algorithms. (Example: Stochastic Gradient Descent/K-Nearest Neighbors/...)
-\
+- Better accuracy than other classification algorithms.(Example: Stochastic Gradient Descent/K-Nearest Neighbours/...)<br>
+
 *Limitations:*
-- The main limitation of a Random Forest is that many trees can make the algorithm too slow and ineffective for real-time predictions.
-- Since a Random Forest combines multiple decision trees, it becomes more difficult to interpret.
+- The main limitation of random forest is that many trees can make the algorithm too slow and ineffective for real-time predictions.
+- Since a random forest combines multiple decision trees, it becomes more difficult to interpret.<br>
+
+
+- Model improvements, changes, additional training:<br>
+
+To improve our classification we also run an oversampling model using a logistic regression model. It adjusts the class distribution of a data set (the ratio between the different classes/categories represented) by randomly duplicating examples from the minority class and adding them to the training dataset. Doing so should help to achieve a better prediction's accuracy score.
+
+To keep improving our model, we will keep refining our features. More have been added as a test, and the accuracy score improves (+2%) and will keep improving as more information are added. That said, the link between the new feature and the primary target is not as strong and while improving the performance of the model, it doesn't add more pertinence in comparison of the model with original feature.    
+We stop using under-sampling as it did not help to improve our model. Indeed, under-sampling can result in dropping a lot of information. Even if this dropped information belongs to the majority class, it is useful information for a modeling algorithm.<br>
+
+Our model is actually divided on 75% training data and 25% testing data. 
+To train further our data, we are thinking about adding information into our training data out-of surveys answer's from a different year. More data will likely give us more accurate predictions since it will be trained on more information.
+
+- Results:<br>
+
+After using Random Forest Classifier to predict our target based on related features, our accuracy score is 78.6%, with a precision of 79%, a recall(sensitivity) of 79% and a F1 score of 0.79.<br>
+The high average F1 score tell us that sensitivity and precision are balanced in our model.<br>
+It can also be  analysed that our model have better performance while predicting a positive MH diagnostic than a negative one. Looking at the confusion matrix for the random forest classifier, even if the accuracy score(~78%) could be better the model is performing well at finding individuals positively diagnose (True positive = 91) and negatively diagnose (True negative = 61).
+
+After oversampling our accuracy score and all other parameters are better 83%, which is good and means our model is predicting more than 4 out of 5 times the correct output.
+In conclusion, as now, the model is successful at answering our question and will still be if more data is added through the model.
+
 \
-\
-**Model Improvements, Changes, Additional Training**
-\
-To improve our classification, we also ran an oversampling model. It adjusted the class distribution of a data set (the ratio between the different classes/categories represented) by randomly duplicating examples from the minority class and adding them to the training dataset. Doing so should help to achieve a better predictions accuracy score.
-To keep improving our model, the next step would be to keep refining our features. For example, we could add some more features if it boosts the prediction’s accuracy. We stopped using under-sampling as it did not help to improve our model. Under-sampling probably did not work because it drops a lot of information. More information helps the modeling algorithm.  
-\
-\
-**Results**
-\
-After using Random Forest Classifier to predict our target based on related features, our accuracy score is 78.6%, with a precision of 79%, a recall(sensitivity) of 79% and a F1 score of 0.79. The high average F1 score tell us that sensitivity and precision are balanced in our model. We can also analyze that our models have better performance while predicting a negative MH diagnostic than a positive one.
-After oversampling, our accuracy score and all other parameters are better than 83%, which is good and means our model is predicting more than 4 out of 5 times the correct output.
 
 ## **Model Type and Goal**
 \
