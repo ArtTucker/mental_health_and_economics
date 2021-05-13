@@ -132,7 +132,7 @@ To train further our data, we are thinking about adding information into our tra
 
 After using Random Forest Classifier to predict our target based on related features, our accuracy score is 78.6%, with a precision of 79%, a recall(sensitivity) of 79% and a F1 score of 0.79.<br>
 The high average F1 score tell us that sensitivity and precision are balanced in our model.<br>
-It can also be  analysed that our model have better performance while predicting a positive MH diagnostic than a negative one. Looking at the confusion matrix for the random forrest classifier, even if the accuracy score(~78%) could be better the model is performing well at finding individuals positively diagnose (True positive = 91) and negatively diagnose (True negative = 61).
+It can also be  analysed that our model have better performance while predicting a positive MH diagnostic than a negative one. Looking at the confusion matrix for the random forest classifier, even if the accuracy score(~78%) could be better the model is performing well at finding individuals positively diagnose (True positive = 91) and negatively diagnose (True negative = 61).
 
 After oversampling our accuracy score and all other parameters are better 83%, which is good and means our model is predicting more than 4 out of 5 times the correct output.
 In conclusion, as now, the model is successful at answering our question and will still be if more data is added through the model.
