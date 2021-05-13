@@ -66,6 +66,7 @@ to view additional analysis visualizations created so far, please visit our [ima
 
 Our intention is to predict an output from a previous experience, to achieve it, we will use a supervised machine learning model.<br>
 This kind of model allow us to use training data to learn a link between the input, and the output. Compared to unsupervised learning, it is a more accurate and trustworthy method.<br>
+[Code-link]()<br>
 - Datasource [Link.](https://github.com/ArtTucker/mental_health_and_economics/blob/main/database/filestoload/2016_surveydata.csv)<br>
   
 - Goal:<br>
@@ -76,17 +77,12 @@ After training and testing our data, and if we add more answers, we will be able
   
 - Data preprocessing:<br>
 
-Couple steps have been necessary to obtained our desired features to plug-in into our machine learning model:<br>
-** Filter our dataset to only keep answers for individual who work in a tech-company.<br>
-** Re-code values entries in the age column.<br>
-** Re-code values entries in the work-position column for consistency purpose.<br>
-** Bins together values in the company-size column as some entries were not usable yet.<br>
-** Re-code values entries in the medical-leave column for consistency purpose.<br>
-** Clean gender column from duplicate ou incorrect entries.<br>
-** Ensure answers consistency for mh-family-history, mh-sought-pro_tx, mh-dx-past, mh-coverage, prev-mh-benefits, prev-employers, country-live.<br>
-** Create visualizations of cleaning step for better understanding of our features.<br>
 
-Once we got all desired features cleaned up for our model, we encoded our data using a label encoder instance. This step allows us to change text values into unique numbers identifier and then use a machine learning algorithm on it.
+For cleaning and preprocessing step, see Data Source/ Pre-Processing module.>br>
+Visualizations of cleaning step have been created for better understanding of our features.<br>
+Once we got all desired features cleaned up for our model, we encoded our data using a LabelEncoder from scikit-learn library. This step allows us to change categorical features into unique number identifier. LabelEncoder encode features with a value between 0 and n classes, where n is the number of distinct features. If a feature repeats it assigns the same value as assigned earlier.<br>
+Using LabelEncoder instead of a pandas get_dummies function for example creates a function which persists and can be applied to new datasets which use the same categorical variables, with consistent results.<br>
+Once encoded our dataset is ready to be used with a machine learning algorithm.<br>
 
 
 - Features and targets engineering:<br>
@@ -108,7 +104,7 @@ When splitting the dataset, we stratify it so that each split is similar. In a c
 - Model:<br>
 
 As now, we are using a Random Forest Classifier because of his versatility, it can be used for both classifications and regression task. It provides higher accuracy through cross validation. Compared to simple decisions trees, instead of searching for the most important feature while splitting a node, it searches for the best feature among a random subset of features.
-We will use it for his classification abilities.<br>
+We will use it for his diagnostics classification abilities.<br>
 
 *Benefits:*
 - Random forest builds multiple decision trees and merges them together to get a more accurate and stable prediction.
@@ -122,11 +118,11 @@ We will use it for his classification abilities.<br>
 - The main limitation of random forest is that many trees can make the algorithm too slow and ineffective for real-time predictions.
 - Since a random forest combines multiple decision trees, it becomes more difficult to interpret.<br>
 
-To improve our classification we also run an oversampling model. It adjusts the class distribution of a data set (the ratio between the different classes/categories represented) by randomly duplicating examples from the minority class and adding them to the training dataset. Doing so should help to achieve a better predictions accuracy score.
+To improve our classification we also run an oversampling model using a logistic regression model. It adjusts the class distribution of a data set (the ratio between the different classes/categories represented) by randomly duplicating examples from the minority class and adding them to the training dataset. Doing so should help to achieve a better prediction's accuracy score.
 
 - Model improvements, changes, additional training:<br>
 
-To keep improving our model, we will keep refining our features and might add some more if it helps to boost our predictions accuracy.  
+To keep improving our model, we will keep refining our features. More have been added as a test, and the accuracy score improves (+2%) and will keep improving as more information are added. That said, the link between the new feature and the primary target is not as strong and while improving the performance of the model, it doesn't add more pertinence in comparison of the model with original feature.    
 We stop using under-sampling as it did not help to improve our model. Indeed, under-sampling can result in dropping a lot of information. Even if this dropped information belongs to the majority class, it is useful information for a modeling algorithm.<br>
 
 Our model is actually divided on 75% training data and 25% testing data. 
@@ -136,8 +132,8 @@ To train further our data, we are thinking about adding information into our tra
 
 After using Random Forest Classifier to predict our target based on related features, our accuracy score is 78.6%, with a precision of 79%, a recall(sensitivity) of 79% and a F1 score of 0.79.<br>
 The high average F1 score tell us that sensitivity and precision are balanced in our model.<br>
-We can also analyse that our model have better performance while predicting a negative MH diagnostic than a positive one. 
-
+It can also be  analysed that our model have better performance while predicting a positive MH diagnostic than a negative one. Looking at the confusion matrix for the random forrest classifier, even if the accuracy score(~78%) could be better the model is performing well at finding individuals positively diagnose (True positive = 91) and negatively diagnose (True negative = 61).
+In conclusion the model is successful at answering our question.
 After oversampling our accuracy score and all other parameters are better 83%, which is good and means our model is predicting more than 4 out of 5 times the correct output.
 
 
