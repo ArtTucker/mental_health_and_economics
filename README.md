@@ -26,19 +26,19 @@ Data was filtered or dropped by these criteria:
 8.	Re-code gender column to address inconsistent entries.
 9.	Ensure answers consistency for mh-family-history, mh-sought-pro_tx, mh-dx-past, mh-coverage, prev-mh-benefits, prev-employers, country-live.
 
-\
+
 Pandas/Python supported this pre-processing of information.
 
 # Database
 To host information and ensure public access across 6 members, Amazon Web services hosts the information. An SQL relational database creates tables and links them by primary and foreign keys across years. Postgres and pgadmin best suited the project because the survey only contains about a 1000 records. Other benefits included:
-\
+
 - Data structure.
 - Easy access to the network.
 - Language (SQL).
 - Speed.
 - Maintenance.
 - Ability to be access by more than one person.
-\
+
 Please [visit](database/Database_ERD2.png) Entity Relational Diagram for details about table structure.
 \
 \
@@ -54,7 +54,7 @@ Analysis examined gender, age, country-worked, and company size’s influence on
 \
 \
 **Comfort Discussing Mental Health with a Supervisor**
-\
+
 
 ***Willingness to discuss mental health issues with coworkers, by age.***
 ![Willingness to discuss mental health issues with coworkers, by age](images/mh_discus_cowork_impact.png)
