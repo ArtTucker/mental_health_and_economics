@@ -187,7 +187,7 @@ It can also be  analysed that our model have better performance while predicting
 After oversampling our accuracy score and all other parameters are better 83%, which is good and means our model is predicting more than 4 out of 5 times the correct output.
 In conclusion, as now, the model is successful at answering our question and will still be if more data is added through the model.
 
-\
+
 
 ## **Model Type and Goal**
 \
