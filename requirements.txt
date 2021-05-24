@@ -108,7 +108,7 @@ Send2Trash @ file:///tmp/build/80754af9/send2trash_1607525499227/work
 six @ file:///opt/concourse/worker/volumes/live/f983ba11-c9fe-4dff-7ce7-d89b95b09771/volume/six_1605205318156/work
 sniffio @ file:///opt/concourse/worker/volumes/live/838fa2d9-a35b-4591-50ce-1f1a39baa1df/volume/sniffio_1614030463440/work
 SQLAlchemy @ file:///opt/concourse/worker/volumes/live/5bc38e07-9d05-4b26-4c5e-ff3c9c29973f/volume/sqlalchemy_1618089558907/work
-tensorboard==2.4.1
+tensorboard==2.4.2
 tensorboard-plugin-wit==1.8.0
 tensorflow==2.4.1
 tensorflow-estimator==2.4.0
