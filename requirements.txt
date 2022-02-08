@@ -110,7 +110,7 @@ sniffio @ file:///opt/concourse/worker/volumes/live/838fa2d9-a35b-4591-50ce-1f1a
 SQLAlchemy @ file:///opt/concourse/worker/volumes/live/5bc38e07-9d05-4b26-4c5e-ff3c9c29973f/volume/sqlalchemy_1618089558907/work
 tensorboard==2.4.2
 tensorboard-plugin-wit==1.8.0
-tensorflow==2.5.1
+tensorflow>=2.5.2
 tensorflow-estimator==2.4.0
 termcolor==1.1.0
 terminado==0.9.4
