@@ -80,7 +80,7 @@ Pillow @ file:///opt/concourse/worker/volumes/live/0aff898a-aba9-4321-76c2-58d62
 plotly @ file:///tmp/build/80754af9/plotly_1610565580232/work
 prometheus-client @ file:///tmp/build/80754af9/prometheus_client_1617383679942/work
 prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1616415428029/work
-protobuf==3.15.7
+protobuf==3.18.3
 psycopg2 @ file:///opt/concourse/worker/volumes/live/ad0d2468-72e7-4502-526f-2fd0ec5d33ff/volume/psycopg2_1612298588979/work
 ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1609355006118/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
 pyasn1==0.4.8
