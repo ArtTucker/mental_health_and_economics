@@ -123,7 +123,7 @@ typing-extensions @ file:///home/ktietz/src/ci_mi/typing_extensions_161280820962
 urllib3 @ file:///tmp/build/80754af9/urllib3_1615837158687/work
 wcwidth @ file:///tmp/build/80754af9/wcwidth_1593447189090/work
 webencodings==0.5.1
-Werkzeug==1.0.1
+Werkzeug==2.2.3
 wrapt==1.12.1
 zipp @ file:///tmp/build/80754af9/zipp_1615904174917/work
 
