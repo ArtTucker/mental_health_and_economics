@@ -27,7 +27,7 @@ google-auth==1.28.0
 google-auth-oauthlib==0.4.4
 google-pasta==0.2.0
 greenlet @ file:///opt/concourse/worker/volumes/live/e96eb331-0f3d-4286-759a-ce903db4e49e/volume/greenlet_1611958360647/work
-grpcio==1.32.0
+grpcio==1.53.0
 h5py==2.10.0
 holoviews==1.14.2
 hvplot==0.7.1
