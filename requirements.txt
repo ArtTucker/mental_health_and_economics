@@ -12,7 +12,7 @@ bleach @ file:///tmp/build/80754af9/bleach_1612211392645/work
 bokeh @ file:///opt/concourse/worker/volumes/live/a7f3ffc7-c901-445a-65e1-5670b91dea65/volume/bokeh_1614700626185/work
 brotlipy==0.7.0
 cachetools==4.2.1
-certifi==2023.7.22
+certifi==2024.7.4
 cffi @ file:///opt/concourse/worker/volumes/live/ca3c0fea-9d0f-4489-6889-89b42078ed37/volume/cffi_1613246931142/work
 chardet @ file:///opt/concourse/worker/volumes/live/9efbf151-b45b-463d-6340-a5c399bf00b7/volume/chardet_1607706825988/work
 colorcet==2.0.6
