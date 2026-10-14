@@ -64,7 +64,7 @@ nbformat @ file:///tmp/build/80754af9/nbformat_1617383369282/work
 nest-asyncio @ file:///tmp/build/80754af9/nest-asyncio_1613680548246/work
 notebook @ file:///opt/concourse/worker/volumes/live/cc183aca-5b6b-47b3-7a6f-532a4cbcfbc1/volume/notebook_1616443452879/work
 numpy @ file:///opt/concourse/worker/volumes/live/a1b5ea96-b05c-40ba-5dfb-4542ece1c186/volume/numpy_and_numpy_base_1603491228242/work
-oauthlib==3.1.0
+oauthlib==4.0.0
 olefile==0.46
 opt-einsum==3.3.0
 packaging @ file:///tmp/build/80754af9/packaging_1611952188834/work
